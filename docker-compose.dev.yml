@@ -8,7 +8,7 @@ services:
       context: ./seereye
       dockerfile: Dockerfile.dev
     ports:
-      - '3001:3001'
+      - '3000:3000'
     depends_on:
       - nodeserver
     links:
@@ -29,7 +29,7 @@ services:
   nginx:
     depends_on:
       - nodeserver
-      - client
+      - seereye
     restart: always
     build:
       dockerfile: Dockerfile
