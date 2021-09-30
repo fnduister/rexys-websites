@@ -1,0 +1,38 @@
+version: "3"
+services:
+  seereye:
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      context: ./seereye
+      dockerfile: Dockerfile.dev
+    ports:
+      - '3001:3001'
+    depends_on:
+      - nodeserver
+    links:
+      - "nodeserver:be"
+    volumes:
+      - /app/node_modules
+      - ./seereye:/app
+
+  nodeserver:
+    build:
+      context: ./nodeserver
+      dockerfile: Dockerfile.dev
+    restart: unless-stopped
+    volumes:
+      - /app/node_modules
+      - ./nodeserver:/app
+
+  nginx:
+    depends_on:
+      - nodeserver
+      - client
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./nginx
+    ports:
+      - "80:80"

@@ -1,0 +1,61 @@
+{
+  "header": {
+    "navigation": {
+      "home": "home"
+    },
+    "title": "We are Rexys",
+    "subtitle1": "La meilleur",
+    "subtitle2": "Nous somme Rexys",
+    "subtitle3": "Nous somme Rexys",
+    "view_work": "View Projects",
+    "title_content": "Rexys is a canadian company that specializes in the design, control, and manufacturing of autonomous systems."
+  },
+  "welcome": {
+    "title_content": "We're ready to help you innovate and transform your business or projects, using the latest technologies, from strategy development through implementation.",
+    "box1": {
+      "title": "Global Positioning System",
+      "content": "Positioning for GPS-denied environments \n"
+    },
+    "box2": {
+      "title": "Embedded Systems",
+      "content": "Our solutions include Tegra-, ARM- and FPGA-based embedded systems"
+    },
+    "box3": {
+      "title": "Machine vision",
+      "content": "Navigation and localization using machine vision."
+    }
+  },
+  "strategy": {
+    "title": "Highly Creative Solutions",
+    "subtitle1": "About",
+    "subtitle2": "Strategy",
+    "content": "We do what we can with what we have",
+    "list": {
+      "innovative": "Innovative Technologies",
+      "fiable": "Secure Architectures",
+      "ergonomy": "Ergonomic Design"
+    }
+  },
+  "ctrl-area":{
+    "title": "Want to see our previous work?",
+    "content": "Here is a the project",
+    "button": "Download"
+  },
+  "who-we-are":{
+    "title1": "Who We",
+    "title2": "Are",
+    "content":"We have over a decade of experience in the creative industry, producing exciting experiences for brands that are as smart, as they are effective.",
+    "professional": {
+      "title": "We are Professional",
+      "content": "We give 100% of what we can"
+    },
+    "passionate": {
+      "title": "We are Passionate",
+      "content": "We give 100% of what we can"
+    },
+    "creative": {
+      "title": "We are Creative",
+      "content": "We give 100% of what we can"
+    }
+  }
+}

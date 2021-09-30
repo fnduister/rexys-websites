@@ -1,0 +1,61 @@
+{
+  "header": {
+    "navigation": {
+      "home": "Acceuil"
+    },
+    "title": "Nous somme Rexys",
+    "subtitle1": "La meilleur",
+    "subtitle2": "Nous somme Rexys",
+    "subtitle3": "Nous somme Rexys",
+    "view_work": "Voir les projets",
+    "title_content": "Rexys est une compagnie canadienne qui se spécialise dans la conception, le contrôle et la fabrication de systèmes autonomes."
+  },
+  "welcome": {
+    "title_content": "Nous sommes prêts à vous aider à innover et à transformer votre entreprise ou vos projets, utilisant les dernières technologies,de l'élaboration de la stratégie à sa mise en œuvre.",
+    "box1": {
+      "title": "Système de positionnement global",
+      "content": "Positionnement pour les environnements sans GPS \n"
+    },
+    "box2": {
+      "title": "Systèmes embarqués",
+      "content": "Nos solutions incluent des systèmes embarqués basés sur Tegra, ARM et FPGA"
+    },
+    "box3": {
+      "title": "Vision par ordinateur",
+      "content": "Navigation et localisation par vision par ordinateur."
+    }
+  },
+  "strategy": {
+    "title": "Solutions hautement créatives",
+    "subtitle1": "Notre",
+    "subtitle2": "Strategie",
+    "content": "Nous faisons le mieux que nous pouvons avec ce que l'on a",
+    "list": {
+      "innovative": "Téchnologies innovantes",
+      "fiable": "Architectures securitaires",
+      "ergonomy": "Des designes ergonimiques"
+    }
+  },
+  "ctrl-area": {
+    "title": "Voulez voir un de nos projets?",
+    "content": "Ce projet est ...",
+    "button": "Télécharger brochure"
+  },
+  "who-we-are": {
+    "title1": "Qui sommes",
+    "title2": "Nous",
+    "content": "Nous avons plus d'une décennie d'expérience dans l'industrie créative, produisant des expériences passionnantes pour des marques aussi intelligentes qu'efficaces.",
+    "professional": {
+      "title": "We are Professional",
+      "content": "Nous donnons 100% de ce que nous pouvons"
+    },
+    "passionate": {
+      "title": "Nous sommes passionnés",
+      "content": "Nous donnons 100% de ce que nous pouvons"
+    },
+    "creative": {
+      "title": "Nous sommes créatifs",
+      "content": "Nous donnons 100% de ce que nous pouvons"
+    }
+  }
+}
