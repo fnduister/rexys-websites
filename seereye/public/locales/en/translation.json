@@ -3,59 +3,106 @@
     "navigation": {
       "home": "home"
     },
-    "title": "We are Rexys",
-    "subtitle1": "La meilleur",
-    "subtitle2": "Nous somme Rexys",
-    "subtitle3": "Nous somme Rexys",
-    "view_work": "View Projects",
-    "title_content": "Rexys is a canadian company that specializes in the design, control, and manufacturing of autonomous systems."
+    "header1": {
+      "heading": "We Are Seer Eye",
+      "subHeading": "Shaping the Future of <span>Autonomous Vehicules</span>",
+      "text": "The AV Simulation Solution.",
+      "klasName": "item-bg-two"
+    },
+    "header2": {
+      "heading": "We Are Simulation",
+      "subHeading": "Best <span>SIMAAS</span> Experience",
+      "text": "Appreciating the varying needs of simulation complexity and simulation time needed by the different profile of customers, SeerEye opted for a Simulation as a Service business model.",
+      "klasName": "item-bg-one"
+    },
+    "header3": {
+      "heading": "We Are Designer",
+      "subHeading": "Creativity is  <span>Intelligence</span>",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "klasName": "item-bg-three"
+    },
+    "buttons": {
+      "view_more": "View More",
+      "get_started": "Access App"
+    }
   },
   "welcome": {
-    "title_content": "We're ready to help you innovate and transform your business or projects, using the latest technologies, from strategy development through implementation.",
+    "title": "welcome to ",
+    "title_content": "SeerEye is a Simaas solution tackling the market's main pain point. Our simulation software solution is highly scalable and can accommodate an almost infinite number of data streams without any loss of quality",
     "box1": {
-      "title": "Global Positioning System",
-      "content": "Positioning for GPS-denied environments \n"
+      "title": "Highly scalable",
+      "content": "A highly scalable simulation environment able to simulate quickly and efficiently millions of edge case scenarios. \n"
     },
     "box2": {
-      "title": "Embedded Systems",
-      "content": "Our solutions include Tegra-, ARM- and FPGA-based embedded systems"
+      "title": "Fully synchronous",
+      "content": "Fully synchronous simulation capable to process in real time an inscresing number of data streams without loss of image quality or increase in latency"
     },
     "box3": {
-      "title": "Machine vision",
-      "content": "Navigation and localization using machine vision."
+      "title": "Handle more sensors",
+      "content": "Current available simulation softwares achieve at best up to 2 or 3 sensors data processing before loosing in quality. Seereye offers an almost infinite number of sensors."
     }
   },
   "strategy": {
-    "title": "Highly Creative Solutions",
-    "subtitle1": "About",
-    "subtitle2": "Strategy",
-    "content": "We do what we can with what we have",
+    "title": "How we offer",
+    "subtitle1": "Business",
+    "subtitle2": "Model",
+    "content": "Appreciatin the varing needs of simulation complexity and simulation time needed by the different profile of customers, SeerEye opted for a simulation as a Service (SimaaS) business model",
     "list": {
-      "innovative": "Innovative Technologies",
-      "fiable": "Secure Architectures",
-      "ergonomy": "Ergonomic Design"
+      "pay-what-you-need": "Only pay for the services of simulation you need, the complexity you require and the time and amount of simulation you intend to run",
+      "subscription": "High complexity and volume customer will be offered subscription models instead of a pay per use model."
     }
   },
-  "ctrl-area":{
-    "title": "Want to see our previous work?",
-    "content": "Here is a the project",
-    "button": "Download"
+  "ctrl-area": {
+    "title": "Want to know more?",
+    "content": "Read our new publication",
+    "buttons": {
+      "view_more": "download",
+      "get_started": "Access App"
+    }
   },
-  "who-we-are":{
+  "who-we-serve": {
     "title1": "Who We",
-    "title2": "Are",
-    "content":"We have over a decade of experience in the creative industry, producing exciting experiences for brands that are as smart, as they are effective.",
-    "professional": {
-      "title": "We are Professional",
-      "content": "We give 100% of what we can"
+    "title2": "Serve",
+    "content": "We have over a decade of experience in the creative industry, producing exciting experiences for brands that are as smart, as they are effective.",
+    "suppliers": {
+      "title": "OEM and Tier 1, Tier 2 suppliers",
+      "content": "in need of highly scalable, high fidelity synchronous multi data stream simulations."
     },
-    "passionate": {
-      "title": "We are Passionate",
-      "content": "We give 100% of what we can"
+    "regulating-autorities": {
+      "title": "Regulating Autorities",
+      "content": "using simulation to test autonomous infrastructure roll out."
     },
-    "creative": {
-      "title": "We are Creative",
-      "content": "We give 100% of what we can"
+    "academic": {
+      "title": "Academic Research",
+      "content": "using simulation to further develop AV algorithm computing"
+    }
+  },
+  "faq": {
+    "title1": "Frequently Asked ",
+    "title2": "Question",
+    "subtitle": "Those are the most common questions regarding our application, don't hesitate to contact us directly if your question is still not answered.",
+    "question1": {
+      "question": "Is there a free version or a demo",
+      "answer": "Unfortunately there's no demo, but we have video showcasing the application's abilities"
+    },
+    "question2": {
+      "question": "What kind of sensor are available",
+      "answer": "by default we support 5 types of sensor, lidar ...."
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle1": "Let's",
+    "subtitle2": "contact",
+    "subtitle3": "us",
+    "title_content": "We are available 24h 5 days a week",
+    "form": {
+      "stay_connected": "stay connected",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "message": "Message",
+      "send": "Send Message"
     }
   }
 }

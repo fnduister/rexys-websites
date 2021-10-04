@@ -2,31 +2,47 @@ import React from 'react';
 import OwlCarousel from 'react-owl-carousel3';
 import VisibilitySensor from "react-visibility-sensor";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { useTranslation } from 'react-i18next';
 
 const options = {
-    items:1,
-    loop:true,
-    autoplay:true,
-    nav:true,
-    responsiveClass:true,
-    dots:false,
-    autoplayHoverPause:true,
-    mouseDrag:true,
+    items: 1,
+    loop: true,
+    autoplay: true,
+    nav: true,
+    responsiveClass: true,
+    dots: false,
+    autoplayHoverPause: true,
+    mouseDrag: true,
     navText: [
         "<i class='fa fa-angle-left'></i>",
         "<i class='fa fa-angle-right'></i>"
     ]
 }
- 
-class MainBanner extends React.Component {
-    render(){
-        return (
-            <OwlCarousel 
-                id="home"
-                className="home-slides owl-theme"
-                {...options}
-            >
-            {this.props.slideData.map((data, idx) => (
+
+const MainBanner = () => {
+    const { t } = useTranslation()
+    const slideData = [
+        {
+            heading: t("header.header1.heading"),
+            subHeading: t("header.header1.subHeading"),
+            text: t("header.header1.text"),
+            klasName: t("header.header1.klasName")
+        },
+        {
+            heading: t("header.header2.heading"),
+            subHeading: t("header.header2.subHeading"),
+            text: t("header.header2.text"),
+            klasName: t("header.header2.klasName")
+        }
+    ]
+
+    return (
+        <OwlCarousel
+            id="home"
+            className="home-slides owl-theme"
+            {...options}
+        >
+            {slideData.map((data, idx) => (
                 <div className={`main-banner ${data.klasName}`} key={idx}>
                     <div className="d-table">
                         <div className="d-table-cell">
@@ -34,52 +50,52 @@ class MainBanner extends React.Component {
                                 <div className="row">
                                     <div className="col-lg-12 col-md-12">
                                         <VisibilitySensor>
-                                        {({ isVisible }) => (
-                                            <div className="main-banner-text">
-                                                <h4 
-                                                    className={
-                                                        isVisible
-                                                            ? "animated fadeInDown slow opacityOne" : ''
-                                                    }
-                                                >
-                                                    {data.heading}
-                                                </h4>
-                                                <h1 
-                                                    className={
-                                                        isVisible
-                                                            ? "animated fadeInDown slow opacityOne" : ''
-                                                    }
-                                                    dangerouslySetInnerHTML={{ __html: data.subHeading }}
-                                                />
+                                            {({ isVisible }) => (
+                                                <div className="main-banner-text">
+                                                    <h4
+                                                        className={
+                                                            isVisible
+                                                                ? "animated fadeInDown slow opacityOne" : ''
+                                                        }
+                                                    >
+                                                        {data.heading}
+                                                    </h4>
+                                                    <h1
+                                                        className={
+                                                            isVisible
+                                                                ? "animated fadeInDown slow opacityOne" : ''
+                                                        }
+                                                        dangerouslySetInnerHTML={{ __html: data.subHeading }}
+                                                    />
 
-                                                <p 
-                                                    className={
-                                                        isVisible
-                                                            ? "animated fadeInDown slow opacityOne" : ''
-                                                    }
-                                                >
-                                                    {data.text}
-                                                </p>
-                                                <AnchorLink 
-                                                    href="#about" 
-                                                    className={`
+                                                    <p
+                                                        className={
+                                                            isVisible
+                                                                ? "animated fadeInDown slow opacityOne" : ''
+                                                        }
+                                                    >
+                                                        {data.text}
+                                                    </p>
+                                                    <a
+                                                        href="#more"
+                                                        className={`
                                                         btn btn-primary ${isVisible ? "animated fadeInDown slow opacityOne" : ""}
                                                     `}
-                                                    
-                                                    
-                                                >
-                                                    Get Started
-                                                </AnchorLink>
-                                                <AnchorLink
-                                                    href="#work" 
-                                                    className={`
+
+
+                                                    >
+                                                        {t("header.buttons.get_started")}
+                                                    </a>
+                                                    <AnchorLink
+                                                        href="#more"
+                                                        className={`
                                                         btn btn-primary view-work ${isVisible ? "animated fadeInDown slow opacityOne" : ""}
-                                                    `}
-                                                >
-                                                    View Work
-                                                </AnchorLink>
-                                            </div>
-                                        )}
+                                                        `}
+                                                    >
+                                                        {t("header.buttons.view_more")}
+                                                    </AnchorLink>
+                                                </div>
+                                            )}
                                         </VisibilitySensor>
                                     </div>
                                 </div>
@@ -88,9 +104,8 @@ class MainBanner extends React.Component {
                     </div>
                 </div>
             ))}
-            </OwlCarousel>
-        );
-    }
+        </OwlCarousel>
+    );
 }
 
 MainBanner.defaultProps = {
@@ -115,5 +130,5 @@ MainBanner.defaultProps = {
         },
     ]
 }
- 
+
 export default MainBanner;

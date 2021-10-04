@@ -8,8 +8,7 @@ const Welcome = () => {
         <section id="welcome" className="welcome-area ptb-80">
             <div className="container">
                 <div className="section-title">
-                    <h4>We are creative</h4>
-                    <h2>Welcome to <span>Rexys</span></h2>
+                    <h2>Welcome to <span>seereye</span></h2>
                     <p>{t("welcome.title_content")}</p>
                 </div>
 

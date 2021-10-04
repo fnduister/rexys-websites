@@ -30,59 +30,20 @@ class HomeTwo extends React.Component {
                 {/* Main Banner */}
                 <MainBanner />
 
-                {/* Welcome Area */}
-                <Welcome />
-
-                {/* About Area */}
-                <About />
-
-                {/* Strategy Area */}
-                <Strategy />
+                {/* Team Area */}
+                <Team />
 
                 {/* Who We Are Area */}
                 <WhoWeAre />
 
-                {/* CTR Area */}
-                <Ctr />
-
-                {/* Skill Area */}
-                <Skill />
-
-                {/* Fact Area */}
-                <Funfact />
-
-                {/* Team Area */}
-                <Team />
-
-                {/* How We Work */}
-                <HowWeWork />
-
-                {/* Services Area */}
-                <Services />
-
-                {/* Why We Are Different */}
-                <WhyWeDifferent />
-
-                {/* Work Area */}
-                <Work />
-
-                {/* Price Area */}
-                <Price />
+                {/* Strategy Area */}
+                <Strategy />
 
                 {/* FAQ Area */}
                 <Faq />
 
-                {/* Testimonials Area */}
-                <Testimonial />
-
-                {/* Blog Area */}
-                <Blog />
-
-                {/* Partner Area */}
-                <Partner />
-
-                {/* Subscribe Area */}
-                <Subscribe />
+                {/* CTR Area */}
+                <Ctr />
 
                 {/* Contact Area */}
                 <Contact />
@@ -90,8 +51,6 @@ class HomeTwo extends React.Component {
                 {/* Footer Area */}
                 <Footer />
                 <GoTop scrollStepInPx="50" delayInMs="16.66" />
-
-                <DemoSidebar />
             </>
         );
     }

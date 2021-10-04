@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Link, withRouter } from 'react-router-dom';
-import logo from "../../assets/logos/logo_rexys.png";
+import logo from "../../assets/logos/logo_seereye.png";
 import { withTranslation } from 'react-i18next';
 
 class Navigation extends React.Component {
@@ -19,6 +19,7 @@ class Navigation extends React.Component {
             collapsed: !this.state.collapsed,
         });
     }
+
 
     componentDidMount() {
         let elementId = document.getElementById("navbar");
@@ -156,7 +157,7 @@ class Navigation extends React.Component {
                 </ul>
                 <li className="nav-item">
                     <button type="button" className="language btn btn-link"
-                        
+
                         onClick={() => this.handleChangeLanguage(this.props.i18n.language !== 'fr' ? 'fr' : 'en')}
                     >{this.props.i18n.language !== 'fr' ? 'FR' : 'EN'}
                     </button>

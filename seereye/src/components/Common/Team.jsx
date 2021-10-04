@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel3';
-import teamOne from '../../assets/images/team-1.jpg';
-import teamTwo from '../../assets/images/team-2.jpg';
-import teamThree from '../../assets/images/team-3.jpg';
+import scalable from '../../assets/images/seereye/network-server-room-PF7RVUX.jpg';
+import synchronous from '../../assets/images/seereye/blue-futuristic-stream-data-communication-flying-i-JX8FY62.jpg';
+import sensors from '../../assets/images/seereye/car-wheel-clamp-with-wheel-align-device-for-wheel--4SELWRA.JPG';
 import teamFour from '../../assets/images/team-4.jpg';
 import teamFive from '../../assets/images/team-5.jpg';
 import teamSix from '../../assets/images/team-6.jpg';
+import { useTranslation } from 'react-i18next';
 
 const options = {
     loop: true,
-    autoplay:true,
+    autoplay: true,
     nav: false,
     margin: 30,
     mouseDrag: true,
@@ -36,160 +37,66 @@ const options = {
         }
     }
 }
- 
-class Team extends React.Component {
-    render(){
-        return (
-            <section id="team" className="team-area ptb-80">
-                <div className="container">
-                    <div className="section-title">
-                        <h4>Meet Rexys</h4>
-                        <h2>Our Creative <span>Team</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    
-                    <div className="row">
-                        <OwlCarousel 
-                            className="team-slider owl-carousel owl-theme"
-                            {...options}
-                        >
-                            <div className="col-lg-12">
-                                <div className="our-team">
-                                    <div className="pic">
-                                        <img src={teamOne} alt="team-img" />
-                                    </div>
 
-                                    <div className="team-content">
-                                        <h3 className="title">Jisan Smith</h3>
-                                        <span className="post">CEO</span>
-                                    </div>
+const Team = () => {
+    const { t } = useTranslation();
 
-                                    <div className="social">
-                                        <ul>
-                                            <li><Link to="#" className="fa fa-facebook"></Link></li>
-                                            <li><Link to="#" className="fa fa-google-plus"></Link></li>
-                                            <li><Link to="#" className="fa fa-instagram"></Link></li>
-                                            <li><Link to="#" className="fa fa-linkedin"></Link></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div className="col-lg-12">
-                                <div className="our-team">
-                                    <div className="pic">
-                                        <img src={teamTwo} alt="team-img" />
-                                    </div>
-
-                                    <div className="team-content">
-                                        <h3 className="title">John Ahmed</h3>
-                                        <span className="post">Web Developer</span>
-                                    </div>
-
-                                    <div className="social">
-                                        <ul>
-                                            <li><Link to="#" className="fa fa-facebook"></Link></li>
-                                            <li><Link to="#" className="fa fa-google-plus"></Link></li>
-                                            <li><Link to="#" className="fa fa-instagram"></Link></li>
-                                            <li><Link to="#" className="fa fa-linkedin"></Link></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div className="col-lg-12">
-                                <div className="our-team">
-                                    <div className="pic">
-                                        <img src={teamThree} alt="team-img" />
-                                    </div>
-
-                                    <div className="team-content">
-                                        <h3 className="title">Arif John</h3>
-                                        <span className="post">Back-End Developer</span>
-                                    </div>
-                                    
-                                    <div className="social">
-                                        <ul>
-                                            <li><Link to="#" className="fa fa-facebook"></Link></li>
-                                            <li><Link to="#" className="fa fa-google-plus"></Link></li>
-                                            <li><Link to="#" className="fa fa-instagram"></Link></li>
-                                            <li><Link to="#" className="fa fa-linkedin"></Link></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div className="col-lg-12">
-                                <div className="our-team">
-                                    <div className="pic">
-                                        <img src={teamFour} alt="team-img" />
-                                    </div>
-
-                                    <div className="team-content">
-                                        <h3 className="title">Sakib Johan</h3>
-                                        <span className="post">Front-End Developer</span>
-                                    </div>
-
-                                    <div className="social">
-                                        <ul>
-                                            <li><Link to="#" className="fa fa-facebook"></Link></li>
-                                            <li><Link to="#" className="fa fa-google-plus"></Link></li>
-                                            <li><Link to="#" className="fa fa-instagram"></Link></li>
-                                            <li><Link to="#" className="fa fa-linkedin"></Link></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div className="col-lg-12">
-                                <div className="our-team">
-                                    <div className="pic">
-                                        <img src={teamFive} alt="team-img" />
-                                    </div>
-
-                                    <div className="team-content">
-                                        <h3 className="title">John Doe</h3>
-                                        <span className="post">Web Developer</span>
-                                    </div>
-
-                                    <div className="social">
-                                        <ul>
-                                            <li><Link to="#" className="fa fa-facebook"></Link></li>
-                                            <li><Link to="#" className="fa fa-google-plus"></Link></li>
-                                            <li><Link to="#" className="fa fa-instagram"></Link></li>
-                                            <li><Link to="#" className="fa fa-linkedin"></Link></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div className="col-lg-12">
-                                <div className="our-team">
-                                    <div className="pic">
-                                        <img src={teamSix} alt="team-img" />
-                                    </div>
-
-                                    <div className="team-content">
-                                        <h3 className="title">Olivia Smith</h3>
-                                        <span className="post">Photographer</span>
-                                    </div>
-                                    
-                                    <div className="social">
-                                        <ul>
-                                            <li><Link to="#" className="fa fa-facebook"></Link></li>
-                                            <li><Link to="#" className="fa fa-google-plus"></Link></li>
-                                            <li><Link to="#" className="fa fa-instagram"></Link></li>
-                                            <li><Link to="#" className="fa fa-linkedin"></Link></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </OwlCarousel>
-                    </div>
+    const content = [
+        {
+            title: t("welcome.box1.title"),
+            content: t("welcome.box1.content"),
+            pic: scalable,
+        },
+        {
+            title: t("welcome.box2.title"),
+            content: t("welcome.box2.content"),
+            pic: synchronous,
+        },
+        {
+            title: t("welcome.box3.title"),
+            content: t("welcome.box3.content"),
+            pic: sensors,
+        },
+    ]
+    return (
+        <section id="team" className="team-area ptb-80">
+            <div className="container">
+                <div className="section-title">
+                    <h2>{t("welcome.title")} <span>SeerEye</span></h2>
+                    <p>{t("welcome.title_content")}</p>
                 </div>
-            </section>
-        );
-    }
+
+                <div className="row">
+                    <OwlCarousel
+                        className="team-slider owl-carousel owl-theme"
+                        {...options}
+                    >
+                        {
+                            content.map((info) =>
+
+                                <div className="col-lg-12">
+                                    <div className="our-team">
+                                        <div className="pic">
+                                            <img src={info.pic} alt="team-img" />
+                                        </div>
+
+                                        <div className="team-content">
+                                            <h3 className="title">{info.title}</h3>
+                                        </div>
+
+                                        <div className="social">
+                                            <p>{info.content}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        }
+
+                    </OwlCarousel>
+                </div>
+            </div>
+        </section>
+    );
 }
- 
+
 export default Team;

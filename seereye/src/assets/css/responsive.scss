@@ -7,7 +7,7 @@ $value_three: 991px;
 $value_four: 992px;
 $value_five: 1199px;
 $value_six: 1400px;
-$template_color: #3a6db0;
+$template_color: #19ABD0;
 
 /* Max width 767px */
 @media only #{$media} and ($feature_max : $value_one) {
@@ -149,7 +149,7 @@ $template_color: #3a6db0;
         }
     }
     
-    .about-Rexys {
+    .about-seereye {
         .section-title {
             h2 {
                 line-height: 1.4;
@@ -927,7 +927,7 @@ $template_color: #3a6db0;
 		margin-bottom: 30px;
     }
 
-    .about-Rexys {
+    .about-seereye {
         .section-title {
             h2 {
                 font-size: 22px;
@@ -1051,7 +1051,7 @@ $template_color: #3a6db0;
 
 /* Min width 992px to Max width 1199px */
 @media only #{$media} and ($feature_min : $value_four) and ($feature_max : $value_five) {
-    .about-Rexys {
+    .about-seereye {
         .pull-left {
             margin-right: 35px;
         }

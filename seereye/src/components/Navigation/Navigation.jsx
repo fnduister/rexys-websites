@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Link, withRouter } from 'react-router-dom';
-import logo from "../../assets/logos/logo_rexys.png";
+import logo from "../../assets/logos/logo_seereye.png";
 import { withTranslation } from 'react-i18next';
 
 class Navigation extends React.Component {
@@ -139,14 +139,21 @@ class Navigation extends React.Component {
                     <li className="nav-item">
                         <AnchorLink onClick={this.toggleNavbar} offset={() => 85} className="nav-link" href="#home">{this.props.t("header.navigation.home")}</AnchorLink>
                     </li>
+
                     <li className="nav-item">
-                        <AnchorLink onClick={this.toggleNavbar} offset={() => 85} className="nav-link" href="#services">Services</AnchorLink>
+                        <AnchorLink onClick={this.toggleNavbar} offset={() => 85} className="nav-link" href="#team">About</AnchorLink>
                     </li>
                     <li className="nav-item">
-                        <AnchorLink onClick={this.toggleNavbar} offset={() => 85} className="nav-link" href="#strategy">Strategy</AnchorLink>
+                        <AnchorLink onClick={this.toggleNavbar} offset={() => 85} className="nav-link" href="#whoweare">Service</AnchorLink>
                     </li>
                     <li className="nav-item">
-                        <AnchorLink onClick={this.toggleNavbar} offset={() => 85} className="nav-link" href="#whoweare">About</AnchorLink>
+                        <AnchorLink onClick={this.toggleNavbar} offset={() => 85} className="nav-link" href="#strategy">Business Model</AnchorLink>
+                    </li>
+                    <li className="nav-item">
+                        <AnchorLink onClick={this.toggleNavbar} offset={() => 85} className="nav-link" href="#faq">FAQ</AnchorLink>
+                    </li>
+                    <li className="nav-item">
+                        <AnchorLink onClick={this.toggleNavbar} offset={() => 85} className="nav-link" href="#more">More</AnchorLink>
                     </li>
                     <li className="nav-item">
                         <AnchorLink onClick={this.toggleNavbar} offset={() => 85} className="nav-link" href="#contact">Contact</AnchorLink>
@@ -156,7 +163,7 @@ class Navigation extends React.Component {
                 </ul>
                 <li className="nav-item">
                     <button type="button" className="language btn btn-link"
-                        
+
                         onClick={() => this.handleChangeLanguage(this.props.i18n.language !== 'fr' ? 'fr' : 'en')}
                     >{this.props.i18n.language !== 'fr' ? 'FR' : 'EN'}
                     </button>
@@ -181,7 +188,7 @@ class Navigation extends React.Component {
                             src={logo}
                             alt="client"
                         />
-                        <span>R</span>exys
+                        <span>S</span>eereye
                     </Link>
                     <button
                         onClick={this.toggleNavbar}

@@ -1,5 +1,5 @@
 /*
-@File: Rexys Template Styles
+@File: seereye Template Styles
 
 * This file contains the styling for the actual tepmlate, this
 is the file you need to edit to change the look of the
@@ -49,7 +49,7 @@ Default CSS
 */
 $family: unquote("Poppins");
 $font_family: 'Poppins', sans-serif;
-$template_color: #3a6db0;
+$template_color: #19ABD0;
 @import url('https://fonts.googleapis.com/css?family=#{$family}:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
 :root {
@@ -525,7 +525,7 @@ Main Banner CSS
         letter-spacing: 2px;
 
         span {
-            color: #3a6db0;
+            color: #19ABD0;
             font-weight: 600;
         }
         .Typewriter {
@@ -770,7 +770,7 @@ About Area CSS
 		opacity:0;
 	}
 }
-.about-Rexys {
+.about-seereye {
     margin-top: 12px;
     .section-title {
         margin-bottom: 20px;

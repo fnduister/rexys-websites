@@ -5,13 +5,6 @@ import '../src/assets/css/font-awesome.min.css';
 import '../src/assets/css/animate.css';
 import '../src/assets/css/style.css';
 import '../src/assets/css/responsive.css';
-
-import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Navigation from './components/Navigation/Navigation';
-import Preloader from './components/Common/Preloader';
-import HomeOne from '../src/components/Pages/HomeOne';
-import HomeTwo from '../src/components/Pages/HomeTwo';
 import HomeThree from '../src/components/Pages/HomeThree';
 import HomeFour from '../src/components/Pages/HomeFour';
 import HomeFive from './components/Pages/HomeFive';
@@ -24,7 +17,13 @@ import HomeEleven from './components/Pages/HomeEleven';
 import HomeTwelve from './components/Pages/HomeTwelve';
 import Blog from './components/Pages/Blog';
 import BlogDetails from './components/Pages/BlogDetails';
-import logo from './assets/logos/logo_rexys.png'
+
+import React, { Suspense } from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Navigation from './components/Navigation/Navigation';
+import Preloader from './components/Common/Preloader';
+import HomeTwo from '../src/components/Pages/HomeTwo';
+import logo from './assets/logos/logo_seereye.png'
 
 
 // loading component for suspense fallback
@@ -68,7 +67,7 @@ class App extends React.Component {
                     <>
                         {this.state.loading ? <Preloader /> : ''}
                         <Navigation />
-                        <Route path="/" exact component={HomeOne} />
+                        <Route path="/" exact component={HomeTwo} />
                         <Route path="/home-two" exact component={HomeTwo} />
                         <Route path="/home-three" exact component={HomeThree} />
                         <Route path="/home-four" exact component={HomeFour} />
@@ -82,8 +81,10 @@ class App extends React.Component {
                         <Route path="/home-twelve" exact component={HomeTwelve} />
                         <Route path="/blog" exact component={Blog} />
                         <Route path="/blog-details" exact component={BlogDetails} />
+
                     </>
                 </Router>
+
             </Suspense>
         );
     }

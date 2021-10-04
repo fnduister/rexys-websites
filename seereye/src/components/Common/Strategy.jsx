@@ -17,14 +17,13 @@ const Strategy = () => {
                             <div className="about-strategy ptb-80">
                                 <div className="section-title">
                                     <h4>{t("strategy.title")}</h4>
-                                    <h2>{t("strategy.subtitle1")} <span>{t("strategy.subtitle2")}</span></h2>
+                                    <h2><span>{t("strategy.subtitle1")}</span> {t("strategy.subtitle2")}</h2>
                                     <p>{t("strategy.content")}</p>
                                 </div>
                                 
                                 <ul>
-                                    <li><i className="fa fa-check"></i>{t("strategy.list.innovative")}</li>
-                                    <li><i className="fa fa-check"></i>{t("strategy.list.fiable")}</li>
-                                    <li><i className="fa fa-check"></i>{t("strategy.list.ergonomy")}</li>
+                                    <li><i className="fa fa-check"></i>{t("strategy.list.pay-what-you-need")}</li>
+                                    <li><i className="fa fa-check"></i>{t("strategy.list.subscription")}</li>
                                 </ul>
                                 
                             </div>
