@@ -1,0 +1,113 @@
+version: "3"
+services:
+  rexys:
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      context: ./rexys
+      dockerfile: Dockerfile.prod
+    ports:
+      - '3001:3001'
+    depends_on:
+      - nodeserver
+      - seereye
+    links:
+      - "nodeserver:be"
+      - "seereye:bi"
+    volumes:
+      - /app/node_modules
+      - ./rexys:/app
+
+  seereye:
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      context: ./seereye
+      dockerfile: Dockerfile.prod
+    ports:
+      - '3000:3000'
+    depends_on:
+      - nodeserver
+      - flutter
+    links:
+      - "nodeserver:be"
+      - "flutter:bi"
+    volumes:
+      - /app/node_modules
+      - ./seereye:/app
+
+  flutter:
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      context: ./seereye-app
+    ports:
+      - '3003:80'
+    volumes:
+      - ./seereye:/app
+
+  nodeserver:
+    build:
+      context: ./nodeserver
+      dockerfile: Dockerfile.dev
+    restart: unless-stopped
+    volumes:
+      - /app/node_modules
+      - ./nodeserver:/app
+    ports:
+      - '5000:5000'
+
+  nginx:
+    depends_on:
+      - nodeserver
+      - seereye
+      - flutter
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./nginx
+    ports:
+      - "4000:80"
+
+  app:
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
+    ports:
+      # Public HTTP Port:
+      - '80:80'
+      # Public HTTPS Port:
+      - '443:443'
+      # Admin Web Port:
+      - '81:81'
+      # Add any other Stream port you want to expose
+      # - '21:21' # FTP
+    environment:
+      # These are the settings to access your db
+      DB_MYSQL_HOST: "db"
+      DB_MYSQL_PORT: 3306
+      DB_MYSQL_USER: "npm"
+      DB_MYSQL_PASSWORD: "npm"
+      DB_MYSQL_NAME: "npm"
+      # If you would rather use Sqlite uncomment this
+      # and remove all DB_MYSQL_* lines above
+      # DB_SQLITE_FILE: "/data/database.sqlite"
+      # Uncomment this if IPv6 is not enabled on your host
+      # DISABLE_IPV6: 'true'
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+    depends_on:
+      - db
+  db:
+    image: 'jc21/mariadb-aria:latest'
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: 'npm'
+      MYSQL_DATABASE: 'npm'
+      MYSQL_USER: 'npm'
+      MYSQL_PASSWORD: 'npm'
+    volumes:
+      - ./data/mysql:/var/lib/mysql

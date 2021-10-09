@@ -77,7 +77,7 @@ const MainBanner = () => {
                                                         {data.text}
                                                     </p>
                                                     <a
-                                                        href="#more"
+                                                        href="/flutter/"
                                                         className={`
                                                         btn btn-primary ${isVisible ? "animated fadeInDown slow opacityOne" : ""}
                                                     `}

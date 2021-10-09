@@ -11,10 +11,23 @@ services:
       - '3000:3000'
     depends_on:
       - nodeserver
+      - flutter
     links:
       - "nodeserver:be"
+      - "flutter:bi"
     volumes:
       - /app/node_modules
+      - ./seereye:/app
+
+  flutter:
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      context: ./seereye-app
+    ports:
+      - '3003:80'
+    volumes:
       - ./seereye:/app
 
   nodeserver:
@@ -25,11 +38,14 @@ services:
     volumes:
       - /app/node_modules
       - ./nodeserver:/app
+    ports:
+      - '5000:5000'
 
   nginx:
     depends_on:
       - nodeserver
       - seereye
+      - flutter
     restart: always
     build:
       dockerfile: Dockerfile
