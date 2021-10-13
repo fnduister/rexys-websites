@@ -1,5 +1,6 @@
 version: "3"
 services:
+
   rexys:
     stdin_open: true
     environment:
@@ -11,10 +12,10 @@ services:
       - '3001:3001'
     depends_on:
       - nodeserver
-      - seereye
     links:
       - "nodeserver:be"
-      - "seereye:bi"
+      - "flutter:be"
+    container_name: rexys
     volumes:
       - /app/node_modules
       - ./rexys:/app
@@ -30,41 +31,39 @@ services:
       - '3000:3000'
     depends_on:
       - nodeserver
-      - flutter
     links:
       - "nodeserver:be"
-      - "flutter:bi"
+    container_name: seereye
     volumes:
       - /app/node_modules
       - ./seereye:/app
 
   flutter:
-    stdin_open: true
-    environment:
-      - CHOKIDAR_USEPOLLING=true
     build:
       context: ./seereye-app
     ports:
       - '3003:80'
     volumes:
-      - ./seereye:/app
+      - ./seereye-app:/app
 
   nodeserver:
     build:
       context: ./nodeserver
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile.prod
     restart: unless-stopped
     volumes:
       - /app/node_modules
       - ./nodeserver:/app
     ports:
       - '5000:5000'
+    container_name: nodeserver
 
   nginx:
     depends_on:
       - nodeserver
       - seereye
       - flutter
+      - rexys
     restart: always
     build:
       dockerfile: Dockerfile
@@ -101,13 +100,16 @@ services:
       - ./letsencrypt:/etc/letsencrypt
     depends_on:
       - db
+
   db:
-    image: 'jc21/mariadb-aria:latest'
-    restart: unless-stopped
+    image: yobasystems/alpine-mariadb
     environment:
-      MYSQL_ROOT_PASSWORD: 'npm'
-      MYSQL_DATABASE: 'npm'
-      MYSQL_USER: 'npm'
-      MYSQL_PASSWORD: 'npm'
+      MYSQL_ROOT_PASSWORD: "npm"
+      MYSQL_DATABASE: "npm"
+      MYSQL_USER: "npm"
+      MYSQL_PASSWORD: "npm"
+    expose:
+      - "3306"
     volumes:
       - ./data/mysql:/var/lib/mysql
+    restart: always
