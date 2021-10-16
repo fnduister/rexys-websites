@@ -8,6 +8,7 @@
     "subtitle2": "Nous somme Rexys",
     "subtitle3": "Nous somme Rexys",
     "view_work": "Voir les projets",
+    "get_started": "Access Project",
     "title_content": "Rexys est une compagnie canadienne qui se spécialise dans la conception, le contrôle et la fabrication de systèmes autonomes."
   },
   "welcome": {
@@ -39,7 +40,8 @@
   "ctrl-area": {
     "title": "Voulez voir un de nos projets?",
     "content": "Ce projet est ...",
-    "button": "Télécharger brochure"
+    "button": "Télécharger brochure",
+    "get_started": "Access Project"
   },
   "who-we-are": {
     "title1": "Qui sommes",

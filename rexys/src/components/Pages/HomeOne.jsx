@@ -48,9 +48,6 @@ class HomeOne extends React.Component {
                 {/* Footer Area */}
                 <Footer />
                 <GoTop scrollStepInPx="50" delayInMs="16.66" />
-                
-                {/* Demo Sidebar */}
-                <DemoSidebar />
             </>
         );
     }

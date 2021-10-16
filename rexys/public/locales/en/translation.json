@@ -8,6 +8,7 @@
     "subtitle2": "Nous somme Rexys",
     "subtitle3": "Nous somme Rexys",
     "view_work": "View Projects",
+    "get_started": "Access Project",
     "title_content": "Rexys is a canadian company that specializes in the design, control, and manufacturing of autonomous systems."
   },
   "welcome": {
@@ -39,7 +40,8 @@
   "ctrl-area":{
     "title": "Want to see our previous work?",
     "content": "Here is a the project",
-    "button": "Download"
+    "button": "Download",
+    "get_started": "Access Project"
   },
   "who-we-are":{
     "title1": "Who We",
