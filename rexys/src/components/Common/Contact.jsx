@@ -109,18 +109,7 @@ class Contact extends React.Component {
 
                     <div className="row">
                         <div className="col-lg-6 col-md-12" >
-                            <div className="contact-info">
-                                <ul>
-                                    <li>
-                                        <i className="fa fa-envelope"></i>
-                                        <Link to="#">info@rexys.io</Link>
-                                    </li>
-                                    <li>
-                                        <i className="fa fa-phone"></i>
-                                        <Link to="#">(+1)-514-824-7418</Link>
-                                    </li>
-                                </ul>
-                            </div>
+
                             <div className="contact-form">
                                 <h4>Stay Connected</h4>
                                 <form id="contactForm" onSubmit={this.onSubmit}>

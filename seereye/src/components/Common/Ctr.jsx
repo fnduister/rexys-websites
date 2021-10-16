@@ -14,7 +14,7 @@ const Ctr = () => {
                             <h2>{t("ctrl-area.title")}</h2>
                             <p>{t("ctrl-area.content")}</p>
                             <a download href={fact_check} className="btn btn-primary">{t("ctrl-area.buttons.view_more")}</a>
-                            <a download href={fact_check} className="btn btn-primary view-work">{t("ctrl-area.buttons.get_started")}</a>
+                            <a download href="https://app.seer-eye.com" className="btn btn-primary view-work">{t("ctrl-area.buttons.get_started")}</a>
                         </div>
                     </div>
                 </div>

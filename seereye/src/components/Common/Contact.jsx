@@ -100,18 +100,6 @@ const Contact = () => {
 
                 <div className="row">
                     <div className="col-lg-6 col-md-12" >
-                        <div className="contact-info">
-                            <ul>
-                                <li>
-                                    <i className="fa fa-envelope"></i>
-                                    <Link to="#">info@seereye.io</Link>
-                                </li>
-                                <li>
-                                    <i className="fa fa-phone"></i>
-                                    <Link to="#">(+1)-514-824-7418</Link>
-                                </li>
-                            </ul>
-                        </div>
                         <div className="contact-form">
                             <h4>{t("contact.form.stay_connected")}</h4>
                             <form id="contactForm" onSubmit={onSubmit}>

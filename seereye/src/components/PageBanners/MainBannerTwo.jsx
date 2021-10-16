@@ -77,7 +77,7 @@ const MainBanner = () => {
                                                         {data.text}
                                                     </p>
                                                     <a
-                                                        href="/flutter/"
+                                                        href="https://app.seer-eye.com"
                                                         className={`
                                                         btn btn-primary ${isVisible ? "animated fadeInDown slow opacityOne" : ""}
                                                     `}

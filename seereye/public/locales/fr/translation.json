@@ -3,59 +3,106 @@
     "navigation": {
       "home": "Acceuil"
     },
-    "title": "Nous somme seereye",
-    "subtitle1": "La meilleur",
-    "subtitle2": "Nous somme seereye",
-    "subtitle3": "Nous somme seereye",
-    "view_work": "Voir les projets",
-    "title_content": "seereye est une compagnie canadienne qui se spécialise dans la conception, le contrôle et la fabrication de systèmes autonomes."
+    "header1": {
+      "heading": "Nous sommes Seer Eye",
+      "subHeading": "Façonner l'avenir des <span>Voiture Autonomes</span>",
+      "text": "la solution de simulation AV.",
+      "klasName": "item-bg-two"
+    },
+    "header2": {
+      "heading": "Nous offrons la Simulation",
+      "subHeading": "Meilleur Experience <span>SIMAAS</span>",
+      "text": "Appréciant les différents besoins de complexité de la simulation et le temps de simulation requis par les différents profils de clients, SeerEye a opté pour un modèle commercial de simulation en tant que service.",
+      "klasName": "item-bg-one"
+    },
+    "header3": {
+      "heading": "Nous sommes Designer",
+      "subHeading": "Creativity is  <span>Intelligence</span>",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "klasName": "item-bg-three"
+    },
+    "buttons": {
+      "view_more": "Voir Plus",
+      "get_started": "Accéder à l'App"
+    }
   },
   "welcome": {
-    "title_content": "Nous sommes prêts à vous aider à innover et à transformer votre entreprise ou vos projets, utilisant les dernières technologies,de l'élaboration de la stratégie à sa mise en œuvre.",
+    "title": "Bienvenue à ",
+    "title_content": "SeerEye est une solution Simaas qui s'attaque au principal problème du marché. Notre solution logicielle de simulation est hautement évolutive et peut accueillir un nombre presque infini de flux de données sans aucune perte de qualité",
     "box1": {
-      "title": "Système de positionnement global",
-      "content": "Positionnement pour les environnements sans GPS \n"
+      "title": "Hautement évolutif",
+      "content": "Un environnement de simulation hautement évolutif capable de simuler rapidement et efficacement des millions de scénarios de cas extrêmes. \n"
     },
     "box2": {
-      "title": "Systèmes embarqués",
-      "content": "Nos solutions incluent des systèmes embarqués basés sur Tegra, ARM et FPGA"
+      "title": "Entièrement synchrone",
+      "content": "Simulation entièrement synchrone capable de traiter en temps réel un nombre croissant de flux de données sans perte de qualité d'image ou augmentation de la latence"
     },
     "box3": {
-      "title": "Vision par ordinateur",
-      "content": "Navigation et localisation par vision par ordinateur."
+      "title": "Gérer plus de capteurs",
+      "content": "Les logiciels de simulation actuellement disponibles permettent au mieux de traiter jusqu'à 2 ou 3 capteurs avant de perdre en qualité. Seereye propose un nombre quasi infini de capteurs."
     }
   },
   "strategy": {
-    "title": "Solutions hautement créatives",
+    "title": "Comment Nous Offrons",
     "subtitle1": "Notre",
-    "subtitle2": "Strategie",
-    "content": "Nous faisons le mieux que nous pouvons avec ce que l'on a",
+    "subtitle2": "Modèle",
+    "content": "Appréciant les besoins variables de complexité de simulation et de temps de simulation requis par les différents profils de clients, SeerEye a opté pour un modèle commercial de simulation en tant que service (SimaaS).",
     "list": {
-      "innovative": "Téchnologies innovantes",
-      "fiable": "Architectures securitaires",
-      "ergonomy": "Des designes ergonimiques"
+      "pay-what-you-need": "Ne payez que pour les services de simulation dont vous avez besoin, la complexité dont vous avez besoin et le temps et la quantité de simulation que vous avez l'intention d'exécuter",
+      "subscription": "Les clients à forte complexité et volume se verront proposer des modèles d'abonnement au lieu d'un modèle de paiement à l'utilisation."
     }
   },
   "ctrl-area": {
-    "title": "Voulez voir un de nos projets?",
-    "content": "Ce projet est ...",
-    "button": "Télécharger brochure"
+    "title": "Vous voulez en savoir plus?",
+    "content": "Lisez notre nouvelle publication",
+    "buttons": {
+      "view_more": "Télécharger",
+      "get_started": "Accéder à l'app"
+    }
   },
-  "who-we-are": {
-    "title1": "Qui sommes",
-    "title2": "Nous",
+  "who-we-serve": {
+    "title1": "Qui Nous",
+    "title2": "Servons",
     "content": "Nous avons plus d'une décennie d'expérience dans l'industrie créative, produisant des expériences passionnantes pour des marques aussi intelligentes qu'efficaces.",
-    "professional": {
-      "title": "We are Professional",
-      "content": "Nous donnons 100% de ce que nous pouvons"
+    "suppliers": {
+      "title": "OEM et Tier 1, Tier 2 supplieurs",
+      "content": "OEM et Tier ayant besoin de simulations multi-données synchrones hautement évolutives et de haute fidélité."
     },
-    "passionate": {
-      "title": "Nous sommes passionnés",
-      "content": "Nous donnons 100% de ce que nous pouvons"
+    "regulating-autorities": {
+      "title": "Autorités de régulation",
+      "content": "Les autorités de régulation utilisent la simulation pour tester le déploiement d'infrastructures autonomes."
     },
-    "creative": {
-      "title": "Nous sommes créatifs",
-      "content": "Nous donnons 100% de ce que nous pouvons"
+    "academic": {
+      "title": "Recherche académique",
+      "content": "Recherche académique utilisant la simulation pour développer davantage le calcul des algorithmes AV"
+    }
+  },
+  "faq": {
+    "title1": "Questions ",
+    "title2": "Fréquemment demandées",
+    "subtitle": "Ce sont les questions les plus fréquentes concernant notre application, n'hésitez pas à nous contacter directement si votre question n'est toujours pas répondue.",
+    "question1": {
+      "question": "Existe-t-il une version gratuite ou une démo",
+      "answer": "Malheureusement, il n'y a pas de démo, mais nous avons une vidéo présentant les capacités de l'application"
+    },
+    "question2": {
+      "question": "Quels types de capteurs sont disponibles",
+      "answer": "Par défaut, nous prenons en charge 5 types de capteurs, lidar ...."
+    }
+  },
+  "contact": {
+    "title": "Entrer en contact",
+    "subtitle1": "Nous",
+    "subtitle2": "contacter",
+    "subtitle3": "maintenant",
+    "title_content": "Nous sommes disponibles 24h/24 et 5j/7",
+    "form": {
+      "stay_connected": "Restez connecté",
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Numéro de téléphone",
+      "message": "Message",
+      "send": "Envoyer Message"
     }
   }
 }

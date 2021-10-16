@@ -44,9 +44,9 @@
   },
   "strategy": {
     "title": "How we offer",
-    "subtitle1": "Business",
-    "subtitle2": "Model",
-    "content": "Appreciatin the varing needs of simulation complexity and simulation time needed by the different profile of customers, SeerEye opted for a simulation as a Service (SimaaS) business model",
+    "subtitle1": "Our",
+    "subtitle2": "Models",
+    "content": "Appreciating the varing needs of simulation complexity and simulation time needed by the different profile of customers, SeerEye opted for a simulation as a Service (SimaaS) business model",
     "list": {
       "pay-what-you-need": "Only pay for the services of simulation you need, the complexity you require and the time and amount of simulation you intend to run",
       "subscription": "High complexity and volume customer will be offered subscription models instead of a pay per use model."
@@ -66,15 +66,15 @@
     "content": "We have over a decade of experience in the creative industry, producing exciting experiences for brands that are as smart, as they are effective.",
     "suppliers": {
       "title": "OEM and Tier 1, Tier 2 suppliers",
-      "content": "in need of highly scalable, high fidelity synchronous multi data stream simulations."
+      "content": "OEM and Tier in need of highly scalable, high fidelity synchronous multi data stream simulations."
     },
     "regulating-autorities": {
       "title": "Regulating Autorities",
-      "content": "using simulation to test autonomous infrastructure roll out."
+      "content": "Regulating autorities using simulation to test autonomous infrastructure roll out."
     },
     "academic": {
       "title": "Academic Research",
-      "content": "using simulation to further develop AV algorithm computing"
+      "content": "Academic Research using simulation to further develop AV algorithm computing"
     }
   },
   "faq": {

@@ -7,14 +7,14 @@ services:
       - CHOKIDAR_USEPOLLING=true
     build:
       context: ./rexys
-      dockerfile: Dockerfile.prod
+      dockerfile: Dockerfile.dev
     ports:
       - '3001:3001'
     depends_on:
       - nodeserver
     links:
       - "nodeserver:be"
-      - "flutter:be"
+    # - "flutter:be"
     container_name: rexys
     volumes:
       - /app/node_modules
@@ -26,7 +26,7 @@ services:
       - CHOKIDAR_USEPOLLING=true
     build:
       context: ./seereye
-      dockerfile: Dockerfile.prod
+      dockerfile: Dockerfile.dev
     ports:
       - '3000:3000'
     depends_on:
@@ -38,13 +38,13 @@ services:
       - /app/node_modules
       - ./seereye:/app
 
-  flutter:
-    build:
-      context: ./seereye-app
-    ports:
-      - '3003:80'
-    volumes:
-      - ./seereye-app:/app
+ # flutter:
+ #   build:
+ #     context: ./seereye-app
+ #   ports:
+ #     - '3003:80'
+ #   volumes:
+ #     - ./seereye-app:/app
 
   nodeserver:
     build:
@@ -62,7 +62,7 @@ services:
     depends_on:
       - nodeserver
       - seereye
-      - flutter
+     # - flutter
       - rexys
     restart: always
     build:
@@ -75,41 +75,23 @@ services:
     image: 'jc21/nginx-proxy-manager:latest'
     restart: unless-stopped
     ports:
-      # Public HTTP Port:
       - '80:80'
-      # Public HTTPS Port:
-      - '443:443'
-      # Admin Web Port:
       - '81:81'
-      # Add any other Stream port you want to expose
-      # - '21:21' # FTP
+      - '443:443'
     environment:
-      # These are the settings to access your db
       DB_MYSQL_HOST: "db"
       DB_MYSQL_PORT: 3306
       DB_MYSQL_USER: "npm"
       DB_MYSQL_PASSWORD: "npm"
       DB_MYSQL_NAME: "npm"
-      # If you would rather use Sqlite uncomment this
-      # and remove all DB_MYSQL_* lines above
-      # DB_SQLITE_FILE: "/data/database.sqlite"
-      # Uncomment this if IPv6 is not enabled on your host
-      # DISABLE_IPV6: 'true'
     volumes:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
-    depends_on:
-      - db
-
   db:
-    image: yobasystems/alpine-mariadb
+    image: 'jc21/mariadb-aria:latest'
+    restart: unless-stopped
     environment:
-      MYSQL_ROOT_PASSWORD: "npm"
-      MYSQL_DATABASE: "npm"
-      MYSQL_USER: "npm"
-      MYSQL_PASSWORD: "npm"
-    expose:
-      - "3306"
-    volumes:
-      - ./data/mysql:/var/lib/mysql
-    restart: always
+      MYSQL_ROOT_PASSWORD: 'npm'
+      MYSQL_DATABASE: 'npm'
+      MYSQL_USER: 'npm'
+      MYSQL_PASSWORD: 'npm'
