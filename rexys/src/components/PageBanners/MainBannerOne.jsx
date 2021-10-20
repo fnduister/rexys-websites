@@ -2,7 +2,7 @@ import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { useTranslation } from 'react-i18next';
 
-const MainBanner = () => {
+const MainBanner = ({data}) => {
   const { t } = useTranslation();
   return (
     <div id="home" className="main-banner item-bg-one">
@@ -12,23 +12,23 @@ const MainBanner = () => {
             <div className="row">
               <div className="col-lg-12 col-md-12">
                 <div className="main-banner-text">
-                  <h4>{t('header.title')}</h4>
+                  <h4>{ data.title }</h4>
                   <h1>
-                    The Best <span>Consulting</span> Experience
+                    {data.subtitle1}
                   </h1>
-                  <p>{t('header.title_content')}</p>
+                  <p>{data.content}</p>
                   <AnchorLink
                     href="#more"
                     className="btn btn-primary view-work"
                     >
-                    {t('header.view_work')}
+                    {data.accessProjectButton}
                   </AnchorLink>
                   <a
                     className="btn btn-primary"
                     href="https://seer-eye.com"
 
                   >
-                    {t('header.get_started')}
+                    {data.viewProjectsButton}
                   </a>
                 </div>
               </div>
