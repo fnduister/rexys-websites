@@ -1,7 +1,11 @@
 {
   "header": {
     "navigation": {
-      "home": "Acceuil"
+      "home": "Acceuil",
+      "strategy": "Stratégie",
+      "about": "À Propos",
+      "services": "Services",
+      "contact": "Contact"
     },
     "title": "Nous somme Rexys",
     "subtitle1": "La meilleur",

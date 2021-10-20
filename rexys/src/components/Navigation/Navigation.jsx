@@ -45,14 +45,16 @@ class Navigation extends React.Component {
 
         mainNavLinks.forEach((link) => {
           let section = document.querySelector(link.hash);
+          if (section) {
 
-          if (
-            section.offsetTop <= fromTop &&
-            section.offsetTop + section.offsetHeight > fromTop
-          ) {
-            link.classList.add('active');
-          } else {
-            link.classList.remove('active');
+            if (
+              section.offsetTop <= fromTop &&
+              section.offsetTop + section.offsetHeight > fromTop
+            ) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
           }
         });
       });
@@ -176,7 +178,7 @@ class Navigation extends React.Component {
               className="nav-link"
               href="#services"
             >
-              Services
+              {this.props.t('header.navigation.services')}
             </AnchorLink>
           </li>
           <li className="nav-item">
@@ -186,7 +188,7 @@ class Navigation extends React.Component {
               className="nav-link"
               href="#strategy"
             >
-              Strategy
+              {this.props.t('header.navigation.strategy')}
             </AnchorLink>
           </li>
           <li className="nav-item">
@@ -196,7 +198,7 @@ class Navigation extends React.Component {
               className="nav-link"
               href="#whoweare"
             >
-              About
+              {this.props.t('header.navigation.about')}
             </AnchorLink>
           </li>
           <li className="nav-item">
@@ -206,7 +208,7 @@ class Navigation extends React.Component {
               className="nav-link"
               href="#contact"
             >
-              Contact
+              {this.props.t('header.navigation.contact')}
             </AnchorLink>
           </li>
         </ul>
