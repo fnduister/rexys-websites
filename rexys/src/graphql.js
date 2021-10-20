@@ -64,7 +64,7 @@ fragment WhoWeAreContentFragment on WhoWeAreSection {
 }
 
 {
-  webSite(id: "1oTJ1rmWyNrDmPcaMBECPs", locale: "en-US") {
+  webSite(id: "1oTJ1rmWyNrDmPcaMBECPs", locale: "${language === 'fr' ? 'fr' : 'en-US'}") {
     siteName
     headersCollection {
       items {

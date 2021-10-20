@@ -1,7 +1,11 @@
 {
   "header": {
     "navigation": {
-      "home": "home"
+      "home": "home",
+      "strategy": "Strategy",
+      "about": "About",
+      "services": "Services",
+      "contact": "Contact"
     },
     "title": "We are Rexys",
     "subtitle1": "La meilleur",
@@ -37,16 +41,16 @@
       "ergonomy": "Ergonomic Design"
     }
   },
-  "ctrl-area":{
+  "ctrl-area": {
     "title": "Want to see our previous work?",
     "content": "Here is a the project",
     "button": "Download",
     "get_started": "Access Project"
   },
-  "who-we-are":{
+  "who-we-are": {
     "title1": "Who We",
     "title2": "Are",
-    "content":"We have over a decade of experience in the creative industry, producing exciting experiences for brands that are as smart, as they are effective.",
+    "content": "We have over a decade of experience in the creative industry, producing exciting experiences for brands that are as smart, as they are effective.",
     "professional": {
       "title": "We are Professional",
       "content": "We give 100% of what we can"
