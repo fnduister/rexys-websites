@@ -3,6 +3,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Link, withRouter } from 'react-router-dom';
 import logo from '../../assets/logos/logo_rexys.png';
 import { withTranslation } from 'react-i18next';
+import debounce from 'lodash.debounce';
 
 class Navigation extends React.Component {
   state = {
@@ -25,7 +26,7 @@ class Navigation extends React.Component {
     document.addEventListener('scroll', () => {
       if (window.scrollY > 170) {
         elementId.classList.add('is-sticky');
-        window.history.pushState('', document.title, window.location.pathname);
+        debounce(() => window.history.pushState('', document.title, window.location.pathname), 1000);
       } else {
         elementId.classList.remove('is-sticky');
       }
