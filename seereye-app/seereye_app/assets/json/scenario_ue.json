@@ -1,0 +1,1613 @@
+{
+    "ScenarioName": "Scenario",
+    "Actors": {
+        "SensoredVehicles": [
+            {
+                "actorName": "Sensed Vehicle 1",
+                "Type": "SensedVehicle",
+                "transform": {
+                    "location": {
+                        "x": 16232,
+                        "y": 20345,
+                        "z": 305
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "MeshName": "Kia",
+                "Materials": [
+                    {
+                        "Name": "TopPaint",
+                        "Value": "TopPaint_default"
+                    },
+                    {
+                        "Name": "Tires",
+                        "Value": "Tire_default"
+                    },
+                    {
+                        "Name": "Rims",
+                        "Value": "Rims_default"
+                    },
+                    {
+                        "Name": "Brakes",
+                        "Value": "Brakes_default"
+                    },
+                    {
+                        "Name": "Interior",
+                        "Value": "Interior_default"
+                    },
+                    {
+                        "Name": "RimsPlating",
+                        "Value": "RimsPlating_default"
+                    },
+                    {
+                        "Name": "Wheel",
+                        "Value": "Wheel_default"
+                    },
+                    {
+                        "Name": "Glass",
+                        "Value": "Main_glass_default"
+                    },
+                    {
+                        "Name": "Brakedisk",
+                        "Value": "Breakdisk_default"
+                    },
+                    {
+                        "Name": "Paint",
+                        "Value": "Paint_default"
+                    }
+                ],
+                "Sensors": [
+                    {
+                        "Name": "Camera 1",
+                        "Type": "Camera",
+                        "InstanceName": "node_lt",
+                        "transform": {
+                            "location": {
+                                "x": 40,
+                                "y": -105,
+                                "z": 120
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": -180
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "Params": [
+                            {
+                                "Name": "WhiteBalanceTemp",
+                                "Value": "6500"
+                            },
+                            {
+                                "Name": "WhiteBalanceTint",
+                                "Value": "0"
+                            },
+                            {
+                                "Name": "ColorGradingSaturation",
+                                "Value": "{\"X\" : 1,\"Y\" : 1,\"Z\" : 1,\"W\" : 1}"
+                            },
+                            {
+                                "Name": "ColorGradingContrast",
+                                "Value": "{\"X\" : 1,\"Y\" : 1,\"Z\" : 1,\"W\" : 1}"
+                            },
+                            {
+                                "Name": "ColorGradingGamma",
+                                "Value": "{\"X\" : 1,\"Y\" : 1,\"Z\" : 1,\"W\" : 1}"
+                            },
+                            {
+                                "Name": "ColorGradingGain",
+                                "Value": "{\"X\" : 1,\"Y\" : 1,\"Z\" : 1,\"W\" : 1}"
+                            },
+                            {
+                                "Name": "ColorGradingOffset",
+                                "Value": "{\"X\" : 0,\"Y\" : 0,\"Z\" : 0,\"W\" : 0}"
+                            },
+                            {
+                                "Name": "ShutterSpeed",
+                                "Value": "60"
+                            },
+                            {
+                                "Name": "ISO",
+                                "Value": "100"
+                            },
+                            {
+                                "Name": "Aperture",
+                                "Value": "4"
+                            },
+                            {
+                                "Name": "MaxAperture",
+                                "Value": "1.2"
+                            },
+                            {
+                                "Name": "DiaphramBlades",
+                                "Value": "5"
+                            },
+                            {
+                                "Name": "LensFlareIntensity",
+                                "Value": "1"
+                            },
+                            {
+                                "Name": "LensFlareTint",
+                                "Value": "{\"R\" : 1,\"G\" : 1,\"B\" : 1,\"A\" : 1}"
+                            },
+                            {
+                                "Name": "LensFlareThreshold",
+                                "Value": "8"
+                            },
+                            {
+                                "Name": "SensorWidth",
+                                "Value": "24.576"
+                            },
+                            {
+                                "Name": "FocalDistance",
+                                "Value": "0"
+                            },
+                            {
+                                "Name": "FOV",
+                                "Value": "100"
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Camera 2",
+                        "Type": "Camera",
+                        "InstanceName": "node_lt",
+                        "transform": {
+                            "location": {
+                                "x": -215,
+                                "y": 0,
+                                "z": 275
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": -24,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "Params": [
+                            {
+                                "Name": "WhiteBalanceTemp",
+                                "Value": "6500"
+                            },
+                            {
+                                "Name": "WhiteBalanceTint",
+                                "Value": "0"
+                            },
+                            {
+                                "Name": "ColorGradingSaturation",
+                                "Value": "{\"X\" : 1,\"Y\" : 1,\"Z\" : 1,\"W\" : 1}"
+                            },
+                            {
+                                "Name": "ColorGradingContrast",
+                                "Value": "{\"X\" : 1,\"Y\" : 1,\"Z\" : 1,\"W\" : 1}"
+                            },
+                            {
+                                "Name": "ColorGradingGamma",
+                                "Value": "{\"X\" : 1,\"Y\" : 1,\"Z\" : 1,\"W\" : 1}"
+                            },
+                            {
+                                "Name": "ColorGradingGain",
+                                "Value": "{\"X\" : 1,\"Y\" : 1,\"Z\" : 1,\"W\" : 1}"
+                            },
+                            {
+                                "Name": "ColorGradingOffset",
+                                "Value": "{\"X\" : 0,\"Y\" : 0,\"Z\" : 0,\"W\" : 0}"
+                            },
+                            {
+                                "Name": "ShutterSpeed",
+                                "Value": "60"
+                            },
+                            {
+                                "Name": "ISO",
+                                "Value": "100"
+                            },
+                            {
+                                "Name": "Aperture",
+                                "Value": "4"
+                            },
+                            {
+                                "Name": "MaxAperture",
+                                "Value": "1.2"
+                            },
+                            {
+                                "Name": "DiaphramBlades",
+                                "Value": "5"
+                            },
+                            {
+                                "Name": "LensFlareIntensity",
+                                "Value": "1"
+                            },
+                            {
+                                "Name": "LensFlareTint",
+                                "Value": "{\"R\" : 1,\"G\" : 1,\"B\" : 1,\"A\" : 1}"
+                            },
+                            {
+                                "Name": "LensFlareThreshold",
+                                "Value": "8"
+                            },
+                            {
+                                "Name": "SensorWidth",
+                                "Value": "24.576"
+                            },
+                            {
+                                "Name": "FocalDistance",
+                                "Value": "0"
+                            },
+                            {
+                                "Name": "FOV",
+                                "Value": "100"
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Camera 3",
+                        "Type": "Camera",
+                        "InstanceName": "node_lt",
+                        "transform": {
+                            "location": {
+                                "x": 40,
+                                "y": 105,
+                                "z": 118
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": -180
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "Params": [
+                            {
+                                "Name": "WhiteBalanceTemp",
+                                "Value": "6500"
+                            },
+                            {
+                                "Name": "WhiteBalanceTint",
+                                "Value": "0"
+                            },
+                            {
+                                "Name": "ColorGradingSaturation",
+                                "Value": "{\"X\" : 1,\"Y\" : 1,\"Z\" : 1,\"W\" : 1}"
+                            },
+                            {
+                                "Name": "ColorGradingContrast",
+                                "Value": "{\"X\" : 1,\"Y\" : 1,\"Z\" : 1,\"W\" : 1}"
+                            },
+                            {
+                                "Name": "ColorGradingGamma",
+                                "Value": "{\"X\" : 1,\"Y\" : 1,\"Z\" : 1,\"W\" : 1}"
+                            },
+                            {
+                                "Name": "ColorGradingGain",
+                                "Value": "{\"X\" : 1,\"Y\" : 1,\"Z\" : 1,\"W\" : 1}"
+                            },
+                            {
+                                "Name": "ColorGradingOffset",
+                                "Value": "{\"X\" : 0,\"Y\" : 0,\"Z\" : 0,\"W\" : 0}"
+                            },
+                            {
+                                "Name": "ShutterSpeed",
+                                "Value": "60"
+                            },
+                            {
+                                "Name": "ISO",
+                                "Value": "100"
+                            },
+                            {
+                                "Name": "Aperture",
+                                "Value": "4"
+                            },
+                            {
+                                "Name": "MaxAperture",
+                                "Value": "1.2"
+                            },
+                            {
+                                "Name": "DiaphramBlades",
+                                "Value": "5"
+                            },
+                            {
+                                "Name": "LensFlareIntensity",
+                                "Value": "1"
+                            },
+                            {
+                                "Name": "LensFlareTint",
+                                "Value": "{\"R\" : 1,\"G\" : 1,\"B\" : 1,\"A\" : 1}"
+                            },
+                            {
+                                "Name": "LensFlareThreshold",
+                                "Value": "8"
+                            },
+                            {
+                                "Name": "SensorWidth",
+                                "Value": "24.576"
+                            },
+                            {
+                                "Name": "FocalDistance",
+                                "Value": "0"
+                            },
+                            {
+                                "Name": "FOV",
+                                "Value": "100"
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Camera 4",
+                        "Type": "Camera",
+                        "InstanceName": "node_lt",
+                        "transform": {
+                            "location": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 185
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "Params": [
+                            {
+                                "Name": "WhiteBalanceTemp",
+                                "Value": "6500"
+                            },
+                            {
+                                "Name": "WhiteBalanceTint",
+                                "Value": "0"
+                            },
+                            {
+                                "Name": "ColorGradingSaturation",
+                                "Value": "{\"X\" : 1,\"Y\" : 1,\"Z\" : 1,\"W\" : 1}"
+                            },
+                            {
+                                "Name": "ColorGradingContrast",
+                                "Value": "{\"X\" : 1,\"Y\" : 1,\"Z\" : 1,\"W\" : 1}"
+                            },
+                            {
+                                "Name": "ColorGradingGamma",
+                                "Value": "{\"X\" : 1,\"Y\" : 1,\"Z\" : 1,\"W\" : 1}"
+                            },
+                            {
+                                "Name": "ColorGradingGain",
+                                "Value": "{\"X\" : 1,\"Y\" : 1,\"Z\" : 1,\"W\" : 1}"
+                            },
+                            {
+                                "Name": "ColorGradingOffset",
+                                "Value": "{\"X\" : 0,\"Y\" : 0,\"Z\" : 0,\"W\" : 0}"
+                            },
+                            {
+                                "Name": "ShutterSpeed",
+                                "Value": "60"
+                            },
+                            {
+                                "Name": "ISO",
+                                "Value": "100"
+                            },
+                            {
+                                "Name": "Aperture",
+                                "Value": "4"
+                            },
+                            {
+                                "Name": "MaxAperture",
+                                "Value": "1.2"
+                            },
+                            {
+                                "Name": "DiaphramBlades",
+                                "Value": "5"
+                            },
+                            {
+                                "Name": "LensFlareIntensity",
+                                "Value": "1"
+                            },
+                            {
+                                "Name": "LensFlareTint",
+                                "Value": "{\"R\" : 1,\"G\" : 1,\"B\" : 1,\"A\" : 1}"
+                            },
+                            {
+                                "Name": "LensFlareThreshold",
+                                "Value": "8"
+                            },
+                            {
+                                "Name": "SensorWidth",
+                                "Value": "24.576"
+                            },
+                            {
+                                "Name": "FocalDistance",
+                                "Value": "0"
+                            },
+                            {
+                                "Name": "FOV",
+                                "Value": "100"
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Lidar 1",
+                        "Type": "Lidar",
+                        "InstanceName": "node_lt",
+                        "transform": {
+                            "location": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 185
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "Params": [
+                            {
+                                "Name": "Channels",
+                                "Value": "16"
+                            },
+                            {
+                                "Name": "Range",
+                                "Value": "1500"
+                            },
+                            {
+                                "Name": "PointsPerSeconds",
+                                "Value": "200000"
+                            },
+                            {
+                                "Name": "RotationFrequency",
+                                "Value": "30"
+                            },
+                            {
+                                "Name": "UpperFovLimit",
+                                "Value": "10"
+                            },
+                            {
+                                "Name": "LowerFovLimit",
+                                "Value": "-30"
+                            },
+                            {
+                                "Name": "HorizontalFov",
+                                "Value": "360"
+                            },
+                            {
+                                "Name": "SocketIoAdressPort",
+                                "Value": "http://localhost:3000"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "Vehicles": [
+            {
+                "actorName": "Vehicle 1",
+                "Type": "Vehicle",
+                "transform": {
+                    "location": {
+                        "x": 15121,
+                        "y": 20592,
+                        "z": 286
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "MeshName": "Kia",
+                "Materials": [
+                    {
+                        "Name": "TopPaint",
+                        "Value": "TopPaint_default"
+                    },
+                    {
+                        "Name": "Tires",
+                        "Value": "Tire_default"
+                    },
+                    {
+                        "Name": "Rims",
+                        "Value": "Rims_default"
+                    },
+                    {
+                        "Name": "Brakes",
+                        "Value": "Brakes_default"
+                    },
+                    {
+                        "Name": "Interior",
+                        "Value": "Interior_default"
+                    },
+                    {
+                        "Name": "RimsPlating",
+                        "Value": "RimsPlating_default"
+                    },
+                    {
+                        "Name": "Wheel",
+                        "Value": "Wheel_default"
+                    },
+                    {
+                        "Name": "Glass",
+                        "Value": "Main_glass_default"
+                    },
+                    {
+                        "Name": "Brakedisk",
+                        "Value": "Breakdisk_default"
+                    },
+                    {
+                        "Name": "Paint",
+                        "Value": "Red_paint"
+                    }
+                ]
+            },
+            {
+                "actorName": "Vehicle 2",
+                "Type": "Vehicle",
+                "transform": {
+                    "location": {
+                        "x": 20882,
+                        "y": 17906,
+                        "z": 305
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 140
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "MeshName": "Kia",
+                "Materials": [
+                    {
+                        "Name": "TopPaint",
+                        "Value": "TopPaint_default"
+                    },
+                    {
+                        "Name": "Tires",
+                        "Value": "Tire_default"
+                    },
+                    {
+                        "Name": "Rims",
+                        "Value": "Rims_default"
+                    },
+                    {
+                        "Name": "Brakes",
+                        "Value": "Brakes_default"
+                    },
+                    {
+                        "Name": "Interior",
+                        "Value": "Interior_default"
+                    },
+                    {
+                        "Name": "RimsPlating",
+                        "Value": "RimsPlating_default"
+                    },
+                    {
+                        "Name": "Wheel",
+                        "Value": "Wheel_default"
+                    },
+                    {
+                        "Name": "Glass",
+                        "Value": "Main_glass_default"
+                    },
+                    {
+                        "Name": "Brakedisk",
+                        "Value": "Breakdisk_default"
+                    },
+                    {
+                        "Name": "Paint",
+                        "Value": "Red_paint"
+                    }
+                ]
+            },
+            {
+                "actorName": "Vehicle 3",
+                "Type": "Vehicle",
+                "transform": {
+                    "location": {
+                        "x": 18518,
+                        "y": 20124,
+                        "z": 305
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": -10
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "MeshName": "ChaosCar",
+                "Materials": [
+                    {
+                        "Name": "TopPaint",
+                        "Value": "TopPaint_default"
+                    },
+                    {
+                        "Name": "Tires",
+                        "Value": "Tire_default"
+                    },
+                    {
+                        "Name": "Rims",
+                        "Value": "Rims_default"
+                    },
+                    {
+                        "Name": "Brakes",
+                        "Value": "Brakes_default"
+                    },
+                    {
+                        "Name": "Interior",
+                        "Value": "Interior_default"
+                    },
+                    {
+                        "Name": "RimsPlating",
+                        "Value": "RimsPlating_default"
+                    },
+                    {
+                        "Name": "Wheel",
+                        "Value": "Wheel_default"
+                    },
+                    {
+                        "Name": "Glass",
+                        "Value": "Main_glass_default"
+                    },
+                    {
+                        "Name": "Brakedisk",
+                        "Value": "Breakdisk_default"
+                    },
+                    {
+                        "Name": "Paint",
+                        "Value": "Blue_paint"
+                    }
+                ]
+            },
+            {
+                "actorName": "Vehicle 4",
+                "Type": "Vehicle",
+                "transform": {
+                    "location": {
+                        "x": 17023,
+                        "y": 9074,
+                        "z": 61
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 89
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "MeshName": "ChaosCar",
+                "Materials": [
+                    {
+                        "Name": "TopPaint",
+                        "Value": "TopPaint_default"
+                    },
+                    {
+                        "Name": "Tires",
+                        "Value": "Tire_default"
+                    },
+                    {
+                        "Name": "Rims",
+                        "Value": "Rims_default"
+                    },
+                    {
+                        "Name": "Brakes",
+                        "Value": "Brakes_default"
+                    },
+                    {
+                        "Name": "Interior",
+                        "Value": "Interior_default"
+                    },
+                    {
+                        "Name": "RimsPlating",
+                        "Value": "RimsPlating_default"
+                    },
+                    {
+                        "Name": "Wheel",
+                        "Value": "Wheel_default"
+                    },
+                    {
+                        "Name": "Glass",
+                        "Value": "Main_glass_default"
+                    },
+                    {
+                        "Name": "Brakedisk",
+                        "Value": "Breakdisk_default"
+                    },
+                    {
+                        "Name": "Paint",
+                        "Value": "Blue_paint"
+                    }
+                ]
+            },
+            {
+                "actorName": "Vehicle 5",
+                "Type": "Vehicle",
+                "transform": {
+                    "location": {
+                        "x": 13103,
+                        "y": 19320,
+                        "z": 286
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 179
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "MeshName": "ChaosCar",
+                "Materials": [
+                    {
+                        "Name": "TopPaint",
+                        "Value": "TopPaint_default"
+                    },
+                    {
+                        "Name": "Tires",
+                        "Value": "Tire_default"
+                    },
+                    {
+                        "Name": "Rims",
+                        "Value": "Rims_default"
+                    },
+                    {
+                        "Name": "Brakes",
+                        "Value": "Brakes_default"
+                    },
+                    {
+                        "Name": "Interior",
+                        "Value": "Interior_default"
+                    },
+                    {
+                        "Name": "RimsPlating",
+                        "Value": "RimsPlating_default"
+                    },
+                    {
+                        "Name": "Wheel",
+                        "Value": "Wheel_default"
+                    },
+                    {
+                        "Name": "Glass",
+                        "Value": "Main_glass_default"
+                    },
+                    {
+                        "Name": "Brakedisk",
+                        "Value": "Breakdisk_default"
+                    },
+                    {
+                        "Name": "Paint",
+                        "Value": "Blue_paint"
+                    }
+                ]
+            },
+            {
+                "actorName": "Vehicle 6",
+                "Type": "Vehicle",
+                "transform": {
+                    "location": {
+                        "x": 23876,
+                        "y": 10688,
+                        "z": 186
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": -79
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "MeshName": "Kia",
+                "Materials": [
+                    {
+                        "Name": "TopPaint",
+                        "Value": "TopPaint_default"
+                    },
+                    {
+                        "Name": "Tires",
+                        "Value": "Tire_default"
+                    },
+                    {
+                        "Name": "Rims",
+                        "Value": "Rims_default"
+                    },
+                    {
+                        "Name": "Brakes",
+                        "Value": "Brakes_default"
+                    },
+                    {
+                        "Name": "Interior",
+                        "Value": "Interior_default"
+                    },
+                    {
+                        "Name": "RimsPlating",
+                        "Value": "RimsPlating_default"
+                    },
+                    {
+                        "Name": "Wheel",
+                        "Value": "Wheel_default"
+                    },
+                    {
+                        "Name": "Glass",
+                        "Value": "Main_glass_default"
+                    },
+                    {
+                        "Name": "Brakedisk",
+                        "Value": "Breakdisk_default"
+                    },
+                    {
+                        "Name": "Paint",
+                        "Value": "Red_paint"
+                    }
+                ]
+            },
+            {
+                "actorName": "Vehicle 7",
+                "Type": "Vehicle",
+                "transform": {
+                    "location": {
+                        "x": 23182,
+                        "y": 8520,
+                        "z": 186
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 90
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "MeshName": "ChaosCar",
+                "Materials": [
+                    {
+                        "Name": "TopPaint",
+                        "Value": "TopPaint_default"
+                    },
+                    {
+                        "Name": "Tires",
+                        "Value": "Tire_default"
+                    },
+                    {
+                        "Name": "Rims",
+                        "Value": "Rims_default"
+                    },
+                    {
+                        "Name": "Brakes",
+                        "Value": "Brakes_default"
+                    },
+                    {
+                        "Name": "Interior",
+                        "Value": "Interior_default"
+                    },
+                    {
+                        "Name": "RimsPlating",
+                        "Value": "RimsPlating_default"
+                    },
+                    {
+                        "Name": "Wheel",
+                        "Value": "Wheel_default"
+                    },
+                    {
+                        "Name": "Glass",
+                        "Value": "Main_glass_default"
+                    },
+                    {
+                        "Name": "Brakedisk",
+                        "Value": "Breakdisk_default"
+                    },
+                    {
+                        "Name": "Paint",
+                        "Value": "Blue_paint"
+                    }
+                ]
+            },
+            {
+                "actorName": "Vehicle 8",
+                "Type": "Vehicle",
+                "transform": {
+                    "location": {
+                        "x": 12514,
+                        "y": 6603,
+                        "z": 20
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "MeshName": "Kia",
+                "Materials": [
+                    {
+                        "Name": "TopPaint",
+                        "Value": "TopPaint_default"
+                    },
+                    {
+                        "Name": "Tires",
+                        "Value": "Tire_default"
+                    },
+                    {
+                        "Name": "Rims",
+                        "Value": "Rims_default"
+                    },
+                    {
+                        "Name": "Brakes",
+                        "Value": "Brakes_default"
+                    },
+                    {
+                        "Name": "Interior",
+                        "Value": "Interior_default"
+                    },
+                    {
+                        "Name": "RimsPlating",
+                        "Value": "RimsPlating_default"
+                    },
+                    {
+                        "Name": "Wheel",
+                        "Value": "Wheel_default"
+                    },
+                    {
+                        "Name": "Glass",
+                        "Value": "Main_glass_default"
+                    },
+                    {
+                        "Name": "Brakedisk",
+                        "Value": "Breakdisk_default"
+                    },
+                    {
+                        "Name": "Paint",
+                        "Value": "Red_paint"
+                    }
+                ]
+            },
+            {
+                "actorName": "Vehicle 9",
+                "Type": "Vehicle",
+                "transform": {
+                    "location": {
+                        "x": 5531,
+                        "y": 13728,
+                        "z": 20
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "MeshName": "ChaosCar",
+                "Materials": [
+                    {
+                        "Name": "TopPaint",
+                        "Value": "TopPaint_default"
+                    },
+                    {
+                        "Name": "Tires",
+                        "Value": "Tire_default"
+                    },
+                    {
+                        "Name": "Rims",
+                        "Value": "Rims_default"
+                    },
+                    {
+                        "Name": "Brakes",
+                        "Value": "Brakes_default"
+                    },
+                    {
+                        "Name": "Interior",
+                        "Value": "Interior_default"
+                    },
+                    {
+                        "Name": "RimsPlating",
+                        "Value": "RimsPlating_default"
+                    },
+                    {
+                        "Name": "Wheel",
+                        "Value": "Wheel_default"
+                    },
+                    {
+                        "Name": "Glass",
+                        "Value": "Main_glass_default"
+                    },
+                    {
+                        "Name": "Brakedisk",
+                        "Value": "Breakdisk_default"
+                    },
+                    {
+                        "Name": "Paint",
+                        "Value": "Blue_paint"
+                    }
+                ]
+            }
+        ],
+        "Pedestrians": [
+            {
+                "actorName": "Pedestrian 1",
+                "Type": "Pedestrian",
+                "transform": {
+                    "location": {
+                        "x": 21751,
+                        "y": 6958,
+                        "z": 28
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "MeshName": "AdultMale",
+                "Materials": [
+                    {
+                        "Name": "Hair1",
+                        "Value": "Hair1_default"
+                    },
+                    {
+                        "Name": "Hair2",
+                        "Value": "Hair2_default"
+                    },
+                    {
+                        "Name": "Eyes",
+                        "Value": "Eyes_default"
+                    },
+                    {
+                        "Name": "EyesTrans",
+                        "Value": "EyesTrans_default"
+                    },
+                    {
+                        "Name": "Skin1",
+                        "Value": "Skin1_default"
+                    },
+                    {
+                        "Name": "Skin2",
+                        "Value": "Skin1_default"
+                    },
+                    {
+                        "Name": "Cloth",
+                        "Value": "Cloth_default"
+                    }
+                ]
+            },
+            {
+                "actorName": "Pedestrian 2",
+                "Type": "Pedestrian",
+                "transform": {
+                    "location": {
+                        "x": 21706,
+                        "y": 5235,
+                        "z": 35
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "MeshName": "AdultMale",
+                "Materials": [
+                    {
+                        "Name": "Hair1",
+                        "Value": "Hair1_default"
+                    },
+                    {
+                        "Name": "Hair2",
+                        "Value": "Hair2_default"
+                    },
+                    {
+                        "Name": "Eyes",
+                        "Value": "Eyes_default"
+                    },
+                    {
+                        "Name": "EyesTrans",
+                        "Value": "EyesTrans_default"
+                    },
+                    {
+                        "Name": "Skin1",
+                        "Value": "Skin1_default"
+                    },
+                    {
+                        "Name": "Skin2",
+                        "Value": "Skin1_default"
+                    },
+                    {
+                        "Name": "Cloth",
+                        "Value": "Cloth_default"
+                    }
+                ]
+            },
+            {
+                "actorName": "Pedestrian 3",
+                "Type": "Pedestrian",
+                "transform": {
+                    "location": {
+                        "x": 22387,
+                        "y": 12825,
+                        "z": 186
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "MeshName": "AdultMale",
+                "Materials": [
+                    {
+                        "Name": "Hair1",
+                        "Value": "Hair1_default"
+                    },
+                    {
+                        "Name": "Hair2",
+                        "Value": "Hair2_default"
+                    },
+                    {
+                        "Name": "Eyes",
+                        "Value": "Eyes_default"
+                    },
+                    {
+                        "Name": "EyesTrans",
+                        "Value": "EyesTrans_default"
+                    },
+                    {
+                        "Name": "Skin1",
+                        "Value": "Skin1_default"
+                    },
+                    {
+                        "Name": "Skin2",
+                        "Value": "Skin1_default"
+                    },
+                    {
+                        "Name": "Cloth",
+                        "Value": "Cloth_default"
+                    }
+                ]
+            },
+            {
+                "actorName": "Pedestrian 4",
+                "Type": "Pedestrian",
+                "transform": {
+                    "location": {
+                        "x": 22323,
+                        "y": 14317,
+                        "z": 186
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "MeshName": "AdultMale",
+                "Materials": [
+                    {
+                        "Name": "Hair1",
+                        "Value": "Hair1_default"
+                    },
+                    {
+                        "Name": "Hair2",
+                        "Value": "Hair2_default"
+                    },
+                    {
+                        "Name": "Eyes",
+                        "Value": "Eyes_default"
+                    },
+                    {
+                        "Name": "EyesTrans",
+                        "Value": "EyesTrans_default"
+                    },
+                    {
+                        "Name": "Skin1",
+                        "Value": "Skin1_default"
+                    },
+                    {
+                        "Name": "Skin2",
+                        "Value": "Skin1_default"
+                    },
+                    {
+                        "Name": "Cloth",
+                        "Value": "Cloth_default"
+                    }
+                ]
+            },
+            {
+                "actorName": "Pedestrian 5",
+                "Type": "Pedestrian",
+                "transform": {
+                    "location": {
+                        "x": 15407,
+                        "y": 6956,
+                        "z": 34
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "MeshName": "AdultMale",
+                "Materials": [
+                    {
+                        "Name": "Hair1",
+                        "Value": "Hair1_default"
+                    },
+                    {
+                        "Name": "Hair2",
+                        "Value": "Hair2_default"
+                    },
+                    {
+                        "Name": "Eyes",
+                        "Value": "Eyes_default"
+                    },
+                    {
+                        "Name": "EyesTrans",
+                        "Value": "EyesTrans_default"
+                    },
+                    {
+                        "Name": "Skin1",
+                        "Value": "Skin1_default"
+                    },
+                    {
+                        "Name": "Skin2",
+                        "Value": "Skin1_default"
+                    },
+                    {
+                        "Name": "Cloth",
+                        "Value": "Cloth_default"
+                    }
+                ]
+            },
+            {
+                "actorName": "Pedestrian 6",
+                "Type": "Pedestrian",
+                "transform": {
+                    "location": {
+                        "x": 17304,
+                        "y": 10905,
+                        "z": 52
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "MeshName": "AdultMale",
+                "Materials": [
+                    {
+                        "Name": "Hair1",
+                        "Value": "Hair1_default"
+                    },
+                    {
+                        "Name": "Hair2",
+                        "Value": "Hair2_default"
+                    },
+                    {
+                        "Name": "Eyes",
+                        "Value": "Eyes_default"
+                    },
+                    {
+                        "Name": "EyesTrans",
+                        "Value": "EyesTrans_default"
+                    },
+                    {
+                        "Name": "Skin1",
+                        "Value": "Skin1_default"
+                    },
+                    {
+                        "Name": "Skin2",
+                        "Value": "Skin1_default"
+                    },
+                    {
+                        "Name": "Cloth",
+                        "Value": "Cloth_default"
+                    }
+                ]
+            },
+            {
+                "actorName": "Pedestrian 7",
+                "Type": "Pedestrian",
+                "transform": {
+                    "location": {
+                        "x": 19823,
+                        "y": 6706,
+                        "z": 20
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "MeshName": "AdultMale",
+                "Materials": [
+                    {
+                        "Name": "Hair1",
+                        "Value": "Hair1_default"
+                    },
+                    {
+                        "Name": "Hair2",
+                        "Value": "Hair2_default"
+                    },
+                    {
+                        "Name": "Eyes",
+                        "Value": "Eyes_default"
+                    },
+                    {
+                        "Name": "EyesTrans",
+                        "Value": "EyesTrans_default"
+                    },
+                    {
+                        "Name": "Skin1",
+                        "Value": "Skin1_default"
+                    },
+                    {
+                        "Name": "Skin2",
+                        "Value": "Skin1_default"
+                    },
+                    {
+                        "Name": "Cloth",
+                        "Value": "Cloth_default"
+                    }
+                ]
+            },
+            {
+                "actorName": "Pedestrian 8",
+                "Type": "Pedestrian",
+                "transform": {
+                    "location": {
+                        "x": 7398,
+                        "y": 4147,
+                        "z": 290
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "MeshName": "AdultMale",
+                "Materials": [
+                    {
+                        "Name": "Hair1",
+                        "Value": "Hair1_default"
+                    },
+                    {
+                        "Name": "Hair2",
+                        "Value": "Hair2_default"
+                    },
+                    {
+                        "Name": "Eyes",
+                        "Value": "Eyes_default"
+                    },
+                    {
+                        "Name": "EyesTrans",
+                        "Value": "EyesTrans_default"
+                    },
+                    {
+                        "Name": "Skin1",
+                        "Value": "Skin1_default"
+                    },
+                    {
+                        "Name": "Skin2",
+                        "Value": "Skin1_default"
+                    },
+                    {
+                        "Name": "Cloth",
+                        "Value": "Cloth_default"
+                    }
+                ]
+            },
+            {
+                "actorName": "Pedestrian 9",
+                "Type": "Pedestrian",
+                "transform": {
+                    "location": {
+                        "x": 24840,
+                        "y": 11081,
+                        "z": 86
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "MeshName": "AdultMale",
+                "Materials": [
+                    {
+                        "Name": "Hair1",
+                        "Value": "Hair1_default"
+                    },
+                    {
+                        "Name": "Hair2",
+                        "Value": "Hair2_default"
+                    },
+                    {
+                        "Name": "Eyes",
+                        "Value": "Eyes_default"
+                    },
+                    {
+                        "Name": "EyesTrans",
+                        "Value": "EyesTrans_default"
+                    },
+                    {
+                        "Name": "Skin1",
+                        "Value": "Skin1_default"
+                    },
+                    {
+                        "Name": "Skin2",
+                        "Value": "Skin1_default"
+                    },
+                    {
+                        "Name": "Cloth",
+                        "Value": "Cloth_default"
+                    }
+                ]
+            },
+            {
+                "actorName": "Pedestrian 10",
+                "Type": "Pedestrian",
+                "transform": {
+                    "location": {
+                        "x": 24935,
+                        "y": 6250,
+                        "z": 35
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "MeshName": "AdultMale",
+                "Materials": [
+                    {
+                        "Name": "Hair1",
+                        "Value": "Hair1_default"
+                    },
+                    {
+                        "Name": "Hair2",
+                        "Value": "Hair2_default"
+                    },
+                    {
+                        "Name": "Eyes",
+                        "Value": "Eyes_default"
+                    },
+                    {
+                        "Name": "EyesTrans",
+                        "Value": "EyesTrans_default"
+                    },
+                    {
+                        "Name": "Skin1",
+                        "Value": "Skin1_default"
+                    },
+                    {
+                        "Name": "Skin2",
+                        "Value": "Skin1_default"
+                    },
+                    {
+                        "Name": "Cloth",
+                        "Value": "Cloth_default"
+                    }
+                ]
+            }
+        ]
+    }
+}

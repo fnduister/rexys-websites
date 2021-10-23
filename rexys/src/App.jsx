@@ -63,25 +63,11 @@ class App extends React.Component {
     render() {
         return (
             <Suspense fallback={<Preloader />}>
-
                 <Router onUpdate={this.hashLinkScroll}>
                     <>
                         {this.state.loading ? <Preloader /> : ''}
                         <Navigation />
                         <Route path="/" exact component={HomeOne} />
-                        <Route path="/home-two" exact component={HomeTwo} />
-                        <Route path="/home-three" exact component={HomeThree} />
-                        <Route path="/home-four" exact component={HomeFour} />
-                        <Route path="/home-five" exact component={HomeFive} />
-                        <Route path="/home-six" exact component={HomeSix} />
-                        <Route path="/home-seven" exact component={HomeSeven} />
-                        <Route path="/home-eight" exact component={HomeEight} />
-                        <Route path="/home-nine" exact component={HomeNine} />
-                        <Route path="/home-ten" exact component={HomeTen} />
-                        <Route path="/home-eleven" exact component={HomeEleven} />
-                        <Route path="/home-twelve" exact component={HomeTwelve} />
-                        <Route path="/blog" exact component={Blog} />
-                        <Route path="/blog-details" exact component={BlogDetails} />
                     </>
                 </Router>
             </Suspense>

@@ -14,7 +14,7 @@ services:
       - nodeserver
     links:
       - "nodeserver:be"
-    # - "flutter:be"
+      # - "flutter:be"
     container_name: rexys
     volumes:
       - /app/node_modules
@@ -38,13 +38,13 @@ services:
       - /app/node_modules
       - ./seereye:/app
 
- # flutter:
- #   build:
- #     context: ./seereye-app
- #   ports:
- #     - '3003:80'
- #   volumes:
- #     - ./seereye-app:/app
+  flutter:
+    build:
+      context: ./seereye-app/seereye_app
+    ports:
+      - '3003:80'
+    volumes:
+      - ./seereye-app:/app
 
   nodeserver:
     build:
@@ -62,7 +62,7 @@ services:
     depends_on:
       - nodeserver
       - seereye
-     # - flutter
+      # - flutter
       - rexys
     restart: always
     build:
