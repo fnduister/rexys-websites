@@ -1,12 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel3';
 import scalable from '../../assets/images/seereye/network-server-room-PF7RVUX.jpg';
 import synchronous from '../../assets/images/seereye/blue-futuristic-stream-data-communication-flying-i-JX8FY62.jpg';
 import sensors from '../../assets/images/seereye/car-wheel-clamp-with-wheel-align-device-for-wheel--4SELWRA.JPG';
-import teamFour from '../../assets/images/team-4.jpg';
-import teamFive from '../../assets/images/team-5.jpg';
-import teamSix from '../../assets/images/team-6.jpg';
 import { useTranslation } from 'react-i18next';
 
 const options = {
