@@ -46,7 +46,6 @@ class Navigation extends React.Component {
         mainNavLinks.forEach((link) => {
           let section = document.querySelector(link.hash);
           if (section) {
-
             if (
               section.offsetTop <= fromTop &&
               section.offsetTop + section.offsetHeight > fromTop
@@ -249,7 +248,7 @@ class Navigation extends React.Component {
             onClick={() => window.location.refresh()}
           >
             <img src={logo} alt="client" />
-            <span>R</span>exys
+            <span className="logo-title">Rexys</span>
           </Link>
           <button
             onClick={this.toggleNavbar}

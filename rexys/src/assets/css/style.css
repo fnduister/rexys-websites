@@ -63,6 +63,11 @@ body {
   line-height: 1;
 }
 
+.logo-title{
+  font-family: candara;
+  margin-top: .5em;
+}
+
 ul {
   padding-left: 0;
   margin-bottom: 0;
@@ -468,6 +473,7 @@ Main Header CSS
 
 .navbar-light .navbar-brand img {
  width:  60px;
+ margin-bottom: .5em;
  height: 60px;
 }
 

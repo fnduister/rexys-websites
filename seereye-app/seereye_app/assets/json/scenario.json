@@ -1,0 +1,451 @@
+{
+    "ScenarioName": "Scenario",
+    "Actors": {
+        "SensoredVehicles": [
+            {
+                "actorName": "Sensed Vehicle 1",
+                "Type": "SensedVehicle",
+                "transform": {
+                    "location": {
+                        "x": 16232,
+                        "y": 20345,
+                        "z": 305
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "presetId": 1
+            }
+        ],
+        "Vehicles": [
+            {
+                "actorName": "Vehicle 1",
+                "Type": "Vehicle",
+                "transform": {
+                    "location": {
+                        "x": 15121,
+                        "y": 20592,
+                        "z": 286
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "presetId": 1
+            },
+            {
+                "actorName": "Vehicle 2",
+                "Type": "Vehicle",
+                "transform": {
+                    "location": {
+                        "x": 20882,
+                        "y": 17906,
+                        "z": 305
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 140
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "presetId": 1
+            },
+            {
+                "actorName": "Vehicle 3",
+                "Type": "Vehicle",
+                "transform": {
+                    "location": {
+                        "x": 18518,
+                        "y": 20124,
+                        "z": 305
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": -10
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "presetId": 2
+            },
+            {
+                "actorName": "Vehicle 4",
+                "Type": "Vehicle",
+                "transform": {
+                    "location": {
+                        "x": 17023,
+                        "y": 9074,
+                        "z": 61
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 89
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "presetId": 2
+            },
+            {
+                "actorName": "Vehicle 5",
+                "Type": "Vehicle",
+                "transform": {
+                    "location": {
+                        "x": 13103,
+                        "y": 19320,
+                        "z": 286
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 179
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "presetId": 2
+            },
+            {
+                "actorName": "Vehicle 6",
+                "Type": "Vehicle",
+                "transform": {
+                    "location": {
+                        "x": 23876,
+                        "y": 10688,
+                        "z": 186
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": -79
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "presetId": 1
+            },
+            {
+                "actorName": "Vehicle 7",
+                "Type": "Vehicle",
+                "transform": {
+                    "location": {
+                        "x": 23182,
+                        "y": 8520,
+                        "z": 186
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 90
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "presetId": 2
+            },
+            {
+                "actorName": "Vehicle 8",
+                "Type": "Vehicle",
+                "transform": {
+                    "location": {
+                        "x": 12514,
+                        "y": 6603,
+                        "z": 20
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "presetId": 1
+            },
+            {
+                "actorName": "Vehicle 9",
+                "Type": "Vehicle",
+                "transform": {
+                    "location": {
+                        "x": 5531,
+                        "y": 13728,
+                        "z": 20
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "presetId": 2
+            }
+        ],
+        "Pedestrians": [
+            {
+                "actorName": "Pedestrian 1",
+                "Type": "Pedestrian",
+                "transform": {
+                    "location": {
+                        "x": 21751,
+                        "y": 6958,
+                        "z": 28
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "presetId": 0
+            },
+            {
+                "actorName": "Pedestrian 2",
+                "Type": "Pedestrian",
+                "transform": {
+                    "location": {
+                        "x": 21706,
+                        "y": 5235,
+                        "z": 35
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "presetId": 0
+            },
+            {
+                "actorName": "Pedestrian 3",
+                "Type": "Pedestrian",
+                "transform": {
+                    "location": {
+                        "x": 22387,
+                        "y": 12825,
+                        "z": 186
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "presetId": 0
+            },
+            {
+                "actorName": "Pedestrian 4",
+                "Type": "Pedestrian",
+                "transform": {
+                    "location": {
+                        "x": 22323,
+                        "y": 14317,
+                        "z": 186
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "presetId": 0
+            },
+            {
+                "actorName": "Pedestrian 5",
+                "Type": "Pedestrian",
+                "transform": {
+                    "location": {
+                        "x": 15407,
+                        "y": 6956,
+                        "z": 34
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "presetId": 0
+            },
+            {
+                "actorName": "Pedestrian 6",
+                "Type": "Pedestrian",
+                "transform": {
+                    "location": {
+                        "x": 17304,
+                        "y": 10905,
+                        "z": 52
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "presetId": 0
+            },
+            {
+                "actorName": "Pedestrian 7",
+                "Type": "Pedestrian",
+                "transform": {
+                    "location": {
+                        "x": 19823,
+                        "y": 6706,
+                        "z": 20
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "presetId": 0
+            },
+            {
+                "actorName": "Pedestrian 8",
+                "Type": "Pedestrian",
+                "transform": {
+                    "location": {
+                        "x": 7398,
+                        "y": 4147,
+                        "z": 290
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "presetId": 0
+            },
+            {
+                "actorName": "Pedestrian 9",
+                "Type": "Pedestrian",
+                "transform": {
+                    "location": {
+                        "x": 24840,
+                        "y": 11081,
+                        "z": 86
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "presetId": 0
+            },
+            {
+                "actorName": "Pedestrian 10",
+                "Type": "Pedestrian",
+                "transform": {
+                    "location": {
+                        "x": 24935,
+                        "y": 6250,
+                        "z": 35
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                "presetId": 0
+            }
+        ]
+    }
+}
