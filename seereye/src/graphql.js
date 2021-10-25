@@ -86,6 +86,7 @@ fragment FaqContentFragment on FaqSection {
 
 
 {
+
   webSite(id: "4qQgKIW0q4JrS8rTiQGaWe", locale: "${language === 'fr' ? 'fr' : 'en-US'}") {
     siteName
     headersCollection {
@@ -107,4 +108,5 @@ fragment FaqContentFragment on FaqSection {
     }
   }
 }
+
 `

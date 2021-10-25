@@ -11,19 +11,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navigation from './components/Navigation/Navigation';
 import Preloader from './components/Common/Preloader';
 import HomeOne from '../src/components/Pages/HomeOne';
-import HomeTwo from '../src/components/Pages/HomeTwo';
-import HomeThree from '../src/components/Pages/HomeThree';
-import HomeFour from '../src/components/Pages/HomeFour';
-import HomeFive from './components/Pages/HomeFive';
-import HomeSix from './components/Pages/HomeSix';
-import HomeSeven from './components/Pages/HomeSeven';
-import HomeEight from './components/Pages/HomeEight';
-import HomeNine from './components/Pages/HomeNine';
-import HomeTen from './components/Pages/HomeTen';
-import HomeEleven from './components/Pages/HomeEleven';
-import HomeTwelve from './components/Pages/HomeTwelve';
-import Blog from './components/Pages/Blog';
-import BlogDetails from './components/Pages/BlogDetails';
 import logo from './assets/logos/logo_rexys.png'
 
 

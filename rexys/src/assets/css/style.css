@@ -583,13 +583,6 @@ Main Banner CSS
   background-image: url("../images/rexys/AdobeStock_108406641.jpeg");
 }
 
-.item-bg-two {
-  background-image: url("../images/main-bg-2.jpg");
-}
-
-.item-bg-three {
-  background-image: url("../images/main-bg-3.jpg");
-}
 
 .main-banner div canvas {
   position: absolute;
@@ -714,7 +707,6 @@ Creative Banner CSS
   bottom: -25px;
   left: 0;
   width: 100%;
-  background-image: url("../images/shape.png");
   height: 150px;
   background-position: center center;
   background-size: cover;
@@ -799,7 +791,6 @@ About Area CSS
 ==============================
 */
 .about-area {
-  background-image: url("../images/patt.png");
   background-position: center center;
 }
 
@@ -1255,7 +1246,6 @@ Fun Facts Area CSS
 ==============================
 */
 .funFacts-area {
-  background-image: url("../images/funfact-bg.jpg");
   position: relative;
   background-position: center center;
   background-size: cover;
@@ -1416,7 +1406,6 @@ How We Work CSS
 ==============================
 */
 .how-work {
-  background-image: url("../images/dott.jpg");
   background-position: center;
   background-size: contain;
   background-repeat: repeat;
@@ -1786,7 +1775,6 @@ Pricing Area CSS
   padding: 30px 0;
   text-align: center;
   position: relative;
-  background-image: url("../images/patt.png");
   background-position: center center;
   -webkit-box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
           box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
@@ -1877,7 +1865,6 @@ FAQ Area CSS
 ==============================
 */
 .faq-area .image {
-  background-image: url("../images/faq-img.jpg");
   position: absolute;
   left: 15px;
   top: 0;
@@ -1945,7 +1932,6 @@ Testimonials Area CSS
 .single-feedback {
   -webkit-box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
           box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
-  background-image: url("../images/patt.png");
   padding: 30px;
   margin-bottom: 30px;
   border-radius: 5px;
@@ -2120,7 +2106,6 @@ Subscribe Area CSS
 ==============================
 */
 .subscribe-area {
-  background-image: url("../images/pattern.png");
   text-align: center;
   background-position: center;
   background-size: contain;
@@ -2347,7 +2332,6 @@ Blog Details Area CSS
 ==============================
 */
 .blog-details-area {
-  background-image: url("../images/pattern.png");
   background-attachment: fixed;
 }
 
