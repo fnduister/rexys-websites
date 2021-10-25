@@ -8,7 +8,7 @@ import {
   AccordionItemButton
 } from 'react-accessible-accordion';
 
-const Faq = () => {
+const Faq = ({ data }) => {
   const { t } = useTranslation()
   const questions = [
     {
@@ -22,10 +22,11 @@ const Faq = () => {
   ]
   return (
     <section id="faq" className="faq-area ptb-80">
+      {console.log("faq: ", data)}
       <div className="container">
         <div className="section-title">
-          <h2>{t("faq.title1")}<span>{t("faq.title2")}</span></h2>
-          <p>{t("faq.subtitle")}</p>
+          <h2>{data.title}</h2>
+          <p>{data.subtitle}</p>
         </div>
 
         <div className="row">
@@ -33,16 +34,16 @@ const Faq = () => {
             <div className="accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
               <Accordion>
                 {
-                  questions.map(question =>
+                  data.questionsCollection.items.map((question, i) =>
 
-                    <AccordionItem>
+                    <AccordionItem key={i}>
                       <AccordionItemHeading>
                         <AccordionItemButton>
-                          {question.question}
+                          {question.title}
                         </AccordionItemButton>
                       </AccordionItemHeading>
                       <AccordionItemPanel>
-                        <p>{question.answer}</p>
+                        <p>{question.content}</p>
                       </AccordionItemPanel>
                     </AccordionItem>
                   )

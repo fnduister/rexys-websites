@@ -8,7 +8,7 @@ class Footer extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 col-md-12">
-                            <h4><Link to="/"><span>S</span>eer<span>E</span>ye</Link></h4>
+                            <h4><Link to="/">SEER EYE</Link></h4>
                             <ul>
                                 <li><Link to="https://www.linkedin.com/" className="fa fa-linkedin" target="_blank"></Link></li>
                             </ul>
