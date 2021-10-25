@@ -1,9 +1,7 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { useTranslation } from 'react-i18next';
 
 const Ctr = ({data}) => {
-    const { t } = useTranslation()
     return (
       <section className="ctr-area ptb-80" id="more">
         <div className="container">
