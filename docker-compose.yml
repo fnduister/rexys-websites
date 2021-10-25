@@ -14,7 +14,7 @@ services:
       - nodeserver
     links:
       - "nodeserver:be"
-      # - "flutter:be"
+      - "flutter:be"
     container_name: rexys
     volumes:
       - /app/node_modules
